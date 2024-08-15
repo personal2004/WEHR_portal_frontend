@@ -1,13 +1,10 @@
 import './App.css';
-import Layout from './components/layout/layout';
-
+import DashboardPage from './pages/dashBoard/dashboradPage';
 
 function App() {
   return (
     <div className="App">
-      <Layout>
-
-      </Layout>
+      <DashboardPage/>
       
     </div>
   );

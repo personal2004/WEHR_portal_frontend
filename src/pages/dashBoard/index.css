@@ -1,0 +1,5 @@
+.cardcalender{
+    margin-left: 265px;
+    display: flex;
+    justify-content: space-evenly;
+}

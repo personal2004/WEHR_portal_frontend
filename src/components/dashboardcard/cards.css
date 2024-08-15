@@ -1,0 +1,53 @@
+.dashnoardcard{
+    width: 640px;
+    height: 330px;
+}
+.dashnoardcard h3{
+    height:62px;
+    padding: 10px 10px 10px 0px;
+}
+.colorcards{
+    display: flex;
+    justify-content: space-between;
+}
+.colorcard{
+    width: 204px;
+    height: 106px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 12px 12px 12px 20px;
+    border-radius: 10px 0px 0px 0px;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.cardreports{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5vh;
+}
+.cardreport{
+    display: flex;
+    justify-content: space-between;
+    width:312px;
+    height:130px;
+    padding: 20px 0px 0px 0px;
+    border-radius: 10px 0px 0px 0px;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    border: 1px;
+}
+.card_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-indent: 1vw;
+}
+.card_item p{
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #686868;
+    
+}
