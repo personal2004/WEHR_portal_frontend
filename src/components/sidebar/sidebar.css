@@ -1,0 +1,40 @@
+.sidebar{
+   height: 100vh;
+   width: 242px;
+   display: flex;
+   flex-direction: column;
+   gap:7vh;
+   background-color: bisque;
+}
+.sidebar h3{ 
+    width: 242px; 
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+}
+.menu-section,.content,.sidebar_content{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    color:#686868;
+}
+.sidebar_content h4{
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-indent: 1vw;
+}
+.menu-section h5,.content h5{
+    display: flex;
+    gap:16px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 2.5vw;
+}
+.menu-section h5 span,.content h5 span{
+ font-size: 24px;
+}
