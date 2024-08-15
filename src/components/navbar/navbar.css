@@ -1,0 +1,67 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 91px;
+    left: 243px;
+    padding: 0px 0px 0px 50px;
+
+  }
+   
+.searchbar input{
+    width: 343px;
+    height: 44px;
+    padding: 10px 16px 10px 16px;
+    border-radius: 4px 0px 0px 0px;
+    border: 1px solid #E0E0E0;
+    outline: #E0E0E0;  
+    background-color: #F5F5F5;  
+}
+
+.search_icon {
+    font-size: 26px;
+    position: relative;
+    right: 35px; 
+    top:7px;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+  }
+
+.navbar_content{
+    width: 364px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.notification,.message{
+    font-size: 25px;
+    color: #686868;
+    cursor: pointer;
+}
+.profile_picture{
+    border-radius: 100%;
+    width: 3vw;
+    height: 6vh;
+}
+.navbar_content h3{
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 500;
+    width: 101px;
+    line-height: 24px;  
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis;  
+}
+.navbar_content  span{
+    font-size: 25px;
+    color: #686868;
+    cursor: pointer;
+    position: relative;
+    top: 0.3vh;
+    left:-1vw;
+}
+
+  

@@ -1,5 +1,5 @@
 import "./sidebar.css";
-import icons from "../../icons";
+import icons from "../../constants/icons";
 const SideBar=()=>{
     return(
         <div className="sidebar">

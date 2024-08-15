@@ -1,0 +1,12 @@
+.layout_sidebar {
+    width: 242px; 
+    height: 100vh;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+  }
+  
+  .layout_navbar {
+     margin-left: 215px;
+  }
+  

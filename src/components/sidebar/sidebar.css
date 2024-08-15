@@ -4,7 +4,7 @@
    display: flex;
    flex-direction: column;
    gap:7vh;
-   background-color: bisque;
+   background-color: #F5F5F5;
 }
 .sidebar h3{ 
     width: 242px; 
@@ -34,6 +34,7 @@
     font-size: 16px;
     line-height: 24px;
     padding-left: 2.5vw;
+    cursor: pointer;
 }
 .menu-section h5 span,.content h5 span{
  font-size: 24px;
