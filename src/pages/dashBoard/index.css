@@ -1,5 +1,16 @@
-.cardcalender{
-    margin-left: 265px;
+.dash_page{
+ margin-left: 265px;
+ display: flex;
+ gap: 0px;
+ flex-direction: row;
+}
+.cardanouncement{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+.calenderactivity{
+    display: flex;
+    flex-direction: column;
 }

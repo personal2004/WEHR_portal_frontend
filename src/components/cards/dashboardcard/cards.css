@@ -1,5 +1,5 @@
 .dashnoardcard{
-    width: 640px;
+    width: 753px;
     height: 330px;
 }
 .dashnoardcard h3{
@@ -11,7 +11,7 @@
     justify-content: space-between;
 }
 .colorcard{
-    width: 204px;
+    width: 244px;
     height: 106px;
     font-weight: 500;
     font-size: 18px;
@@ -29,10 +29,10 @@
 }
 .cardreport{
     display: flex;
-    justify-content: space-between;
-    width:312px;
-    height:130px;
-    padding: 20px 0px 0px 0px;
+    gap: 2px;
+    width:363px;
+    height:156px;
+    padding: 10px 0px 0px 0px;
     border-radius: 10px 0px 0px 0px;
     box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
     border: 1px;
@@ -42,6 +42,19 @@
     flex-direction: column;
     justify-content: space-around;
     text-indent: 1vw;
+    font-size: 18px;
+}
+.subject{
+    font-size: 18px;
+    white-space: 0px;
+    width: 8vw;
+}
+.count{
+   font-size: 48px;
+}
+ img{
+    width: 218px;
+    height: 139px;
 }
 .card_item p{
     font-family: 'Roboto';

@@ -1,4 +1,4 @@
-import { dashboardcard, dashboardreport } from '../../constants/jsonconstant';
+import { dashboardcard, dashboardreport } from '../../../constants/jsonconstant';
 import './cards.css';
 
 const DashboardCard=()=>{
@@ -19,9 +19,9 @@ const DashboardCard=()=>{
             return(
                 <div key={index} className='cardreport'>
                   <div className='card_item'>
-                    <h4>{data.subject}</h4>
-                    <h4>{data.count}</h4>
-                    <p>{data.men}<br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{data.women}</p>
+                    <h4 className='subject'>{data.subject}</h4>
+                    <h4 className='count'>{data.count}</h4>
+                    <p>{data.men}<br></br>&nbsp;&nbsp;&nbsp;&nbsp;{data.women}</p>
                   </div>
                   <img src={data.reportimg} alt='report_img'/>
                 </div>
