@@ -5,6 +5,11 @@
 .dashnoardcard h3{
     height:62px;
     padding: 10px 10px 10px 0px;
+    font-family:'Poppins';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: left;
 }
 .colorcards{
     display: flex;

@@ -4,13 +4,15 @@
  gap: 0px;
  flex-direction: row;
 }
-.cardanouncement{
+.cardanouncement,.calenderactivity{
+    margin-left: 2vw;
     display: flex;
     flex-direction: column;
     gap: 40px;
     
 }
-.calenderactivity{
+/* .calenderactivity{
     display: flex;
     flex-direction: column;
-}
+
+} */

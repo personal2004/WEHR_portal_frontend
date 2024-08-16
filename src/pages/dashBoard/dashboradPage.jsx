@@ -3,6 +3,7 @@ import DashboardCard from '../../components/cards/dashboardcard/cards';
 import Layout from "../../components/layout/layout";
 import CalenderComponent from '../../components/calender/calender';
 import Anouncement from '../../components/cards/anouncement/anouncement';
+import Birthday from '../../components/cards/birthday/birthday';
 
 const DashboardPage=()=>{
     return(
@@ -14,6 +15,7 @@ const DashboardPage=()=>{
         </div>
         <div className='calenderactivity'>
         <CalenderComponent/>
+        <Birthday/>
         </div>
         </div>
         </Layout>

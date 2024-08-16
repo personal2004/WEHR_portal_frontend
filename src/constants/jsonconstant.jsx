@@ -1,4 +1,4 @@
-import {dashrepo1,dashrepo2} from './images'
+import {dashrepo1,dashrepo2,birthdayboy,roundblankphoto} from './images'
 
 const dashboardcard=[ { color:'#FFEFE7',subject:'Leave Request ',count:'04'}, { color:'#E8F0FB',subject:'Attendance',count:'10'},
     { color:'#FDEBF9',subject:'Total Employees',count:'24'}]
@@ -10,8 +10,12 @@ const announcementdata=[{topic:'Outing schedule for every departement',time:'5 M
     {topic:'Meeting HR Department',time:'Yesterday, 12:30 PM'},
     {topic:'IT Department need two more talents for UX/UI Designer position',time:'Yesterday, 09:15 AM'}]
    
+const birthdata=[{img:birthdayboy,name:'Robert Whistable',position:'Product manager',date:'15 feb 1998'},
+    {img:roundblankphoto,name:'Robert Whistable',position:'Product manager',date:''}]
+
 export{
     dashboardcard,
     dashboardreport,
-    announcementdata
+    announcementdata,
+    birthdata
 }
