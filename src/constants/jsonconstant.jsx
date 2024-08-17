@@ -8,10 +8,18 @@ const dashboardreport=[{subject:'PayRoll',count:'48',men:'12 Men',women:'12 Wome
 
 const announcementdata=[{topic:'Outing schedule for every departement',time:'5 Minutes ago'},
     {topic:'Meeting HR Department',time:'Yesterday, 12:30 PM'},
-    {topic:'IT Department need two more talents for UX/UI Designer position',time:'Yesterday, 09:15 AM'}]
+    {topic:'IT Department need two more talents for UX/UI Designer position',time:'Yesterday, 09:15 AM'},
+    {topic:'Outing schedule for every departement',time:'5 Minutes ago'},
+    {topic:'Meeting HR Department',time:'Yesterday, 12:30 PM'},
+    {topic:'IT Department need two more talents for UX/UI Designer position',time:'Yesterday, 09:15 AM'},
+    {topic:'IT Department need two more talents for UX/UI Designer position',time:'Yesterday, 09:15 AM'},
+
+]
    
 const birthdata=[{img:birthdayboy,name:'Robert Whistable',position:'Product manager',date:'15 feb 1998'},
-    {img:roundblankphoto,name:'Robert Whistable',position:'Product manager',date:''}]
+    {img:roundblankphoto,name:'Robert Whistable',position:'Product manager',date:''},
+    {img:birthdayboy,name:'Robert Whistable',position:'Product manager',date:'15 feb 1998'},
+]
 
 export{
     dashboardcard,

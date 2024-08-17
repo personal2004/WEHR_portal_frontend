@@ -8,7 +8,7 @@ const Navbar=()=> {
     <>
     <nav className="navbar">
         <div className='searchbar'>
-          <input type='text' placeholder='Search Employee'></input>
+          <input className='search_bar'type='text' placeholder='Search Employee'></input>
           <button className='search_icon'>{icons.search}</button> 
         </div>
         <div className='navbar_content'>

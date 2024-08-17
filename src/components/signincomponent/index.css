@@ -1,0 +1,80 @@
+.signInCard{
+    width: 50vw;
+    height: 100vh;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    padding: 6%;
+    padding-left:8vw;
+    gap:10vh
+}
+.signInCard_logo{
+    display: flex;
+    gap:1vw;
+}
+.signInCard_logo img{
+    width: 60px;
+    height: 60px; 
+    border-radius: 10px 0px 0px 0px;
+}
+.signInCard_logo h3{
+    width: 160px;
+    height: 48px;
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+}
+.signinform{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 25vw;
+    height: 50vh;    
+   
+}
+.signinform h1{
+    font-family:'Poppins';
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 93px;
+    text-align: left;
+}
+.signinform h2{
+    font-family:'Poppins';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+}
+.signin_input{
+    display: flex;
+}
+.signin_input span{
+    margin-left:-2vw;
+    position: relative;
+    top:1.2vh;
+    left:1.9vw;
+    font-size: 20px;
+}
+.signin_input input{
+    border: none;
+    outline: none;
+    background-color:white;
+    width: 100%;
+    height: 3vh;
+    border-radius: 5px 0px 0px 0px;
+    padding: 6%;
+    padding-left: 2.3vw;
+}
+.signinbutton{
+    border: none;
+    width: 100%;
+    background-color: red;
+    color: white;
+    height: 5vh;
+}
+.signcheckbox{
+    display: flex;
+    gap:0.5vw;
+}

@@ -1,18 +1,30 @@
 .dash_page{
- margin-left: 265px;
+ margin-left:13vw;
  display: flex;
- gap: 0px;
  flex-direction: row;
 }
 .cardanouncement,.calenderactivity{
     margin-left: 2vw;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    
+    gap: 5vh;   
 }
-/* .calenderactivity{
-    display: flex;
-    flex-direction: column;
 
-} */
+@media only screen and (max-width:1204px){
+    .dash_page{
+        margin: 0% 1vw;
+        flex-direction: column;
+    }
+    .cardanouncement,.calenderactivity{
+        margin-left: 0%;
+    }
+}
+
+@media only screen and (max-width:537px){
+    .cardanouncement{
+        gap: 16vh;
+    }
+    .calenderactivity{
+        gap: 0;
+    }
+}

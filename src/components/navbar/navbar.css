@@ -1,31 +1,35 @@
 .navbar {
+    width:84;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content:space-between;
-    height: 91px;
-    left: 243px;
     padding: 0px 0px 0px 50px;
-
+    position: relative;
   }
-   
-.searchbar input{
+
+.searchbar{
+    position: relative;
+ } 
+
+.search_bar{
     width: 343px;
     height: 44px;
     padding: 10px 16px 10px 16px;
     border-radius: 4px 0px 0px 0px;
     border: 1px solid #E0E0E0;
     outline: #E0E0E0;  
-    background-color: #F5F5F5;  
+    background-color: #F5F5F5; 
+    position:relative;
 }
 
 .search_icon {
     font-size: 26px;
-    position: relative;
-    right: 35px; 
-    top:7px;
+    position:absolute;
+    top: 1vh; 
+    right: 1vw; 
     border: none;
     outline: none;
-    background-color: white;
     cursor: pointer;
   }
 
@@ -59,9 +63,31 @@
     font-size: 25px;
     color: #686868;
     cursor: pointer;
-    position: relative;
     top: 0.3vh;
     left:-1vw;
 }
 
-  
+    @media only screen and (max-width:1204px){ 
+        .navbar {
+            background-color: aliceblue;
+            width:100vw;
+        }
+    }
+    @media only screen and (max-width:657px){
+        .navbar_content h3{
+            display: none;
+        }
+    } 
+    @media only screen and (max-width:531px){
+        .navbar {
+            padding: 0%;
+        }
+        .search_bar{
+            width:50vw;
+        }  
+    }
+    @media only screen and (max-width:478px){
+        .search_bar{
+            width: 70vw;
+        } 
+    }

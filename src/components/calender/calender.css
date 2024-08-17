@@ -1,14 +1,21 @@
 .calender{
-    width: 600px;
-    height: 330px;
+    width: 30vw;
+    height: 44vh;
 }
 
 .calender h3{
-    height:62px;
+    height:7vh;
     padding: 10px 10px 10px 0px;
     font-family: 'Poppins';
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
     text-align: left;   
+}
+
+@media only screen and (max-width:1204px){
+ .calender{
+    width: 97vw;
+    margin-top: 2vh;
+ }
 }

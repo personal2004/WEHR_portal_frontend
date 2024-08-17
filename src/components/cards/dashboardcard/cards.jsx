@@ -23,7 +23,7 @@ const DashboardCard=()=>{
                     <h4 className='count'>{data.count}</h4>
                     <p>{data.men}<br></br>&nbsp;&nbsp;&nbsp;&nbsp;{data.women}</p>
                   </div>
-                  <img src={data.reportimg} alt='report_img'/>
+                  <img className='report_img'src={data.reportimg} alt='report_img'/>
                 </div>
             )
         })}

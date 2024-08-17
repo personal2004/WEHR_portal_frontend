@@ -1,9 +1,9 @@
 .dashnoardcard{
-    width: 753px;
-    height: 330px;
+    width: 52vw;
+    height: 42vh;
 }
 .dashnoardcard h3{
-    height:62px;
+    height:7vh;
     padding: 10px 10px 10px 0px;
     font-family:'Poppins';
     font-size: 24px;
@@ -14,10 +14,11 @@
 .colorcards{
     display: flex;
     justify-content: space-between;
+    width: 52vw;
+    height:15vh;
 }
 .colorcard{
-    width: 244px;
-    height: 106px;
+    width: 16vw;
     font-weight: 500;
     font-size: 18px;
     padding: 12px 12px 12px 20px;
@@ -30,19 +31,25 @@
 .cardreports{
     display: flex;
     justify-content: space-between;
-    margin-top: 2.5vh;
+    margin-top: 2vh;
+    width:52vw;
+    height:20vh;
 }
 .cardreport{
+    width:25vw;
     display: flex;
-    gap: 2px;
-    width:363px;
-    height:156px;
-    padding: 10px 0px 0px 0px;
+    justify-content: space-between;
+    right:1vw;
+    padding: 10px 8px 0px 5px;
     border-radius: 10px 0px 0px 0px;
     box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
     border: 1px;
 }
 .card_item{
+    width: 10vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -51,15 +58,14 @@
 }
 .subject{
     font-size: 18px;
-    white-space: 0px;
-    width: 8vw;
 }
 .count{
    font-size: 48px;
 }
- img{
-    width: 218px;
-    height: 139px;
+.report_img{
+    align-self: center;
+    width: 12vw;
+    height: 17vh;
 }
 .card_item p{
     font-family: 'Roboto';
@@ -68,4 +74,48 @@
     line-height: 18px;
     color: #686868;
     
+}
+
+@media only screen and (max-width:1204px){
+    .dashnoardcard,.colorcards,.cardreports{
+        width: 100vw;
+    }
+    .colorcard{
+     width: 32vw;
+     margin-right: 3vw;
+    }
+    .cardreport{
+        width: 48vw;
+        margin-right: 3vw;
+    }
+    .card_item{
+       width:22vw;
+       font-size: 28px;
+    }
+    .report_img{
+        width: 22vw;
+    }
+}
+@media only screen and (max-width:537px){
+    .colorcards{
+      height: 35vh;
+      flex-direction: column;
+      gap:2vh;
+    }
+    .cardreports{
+      flex-direction: column;
+      gap:2vh;
+      height:40vh;
+    }
+    .dashnoardcard{
+        height:70vh;
+    }
+    .colorcard{
+        width: 96vw;
+        height: 18vh;
+    }
+    .cardreport{
+        width: 96vw;
+        height: 20vh;
+    }
 }

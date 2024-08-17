@@ -9,14 +9,14 @@ const DashboardPage=()=>{
     return(
         <Layout >
         <div className='dash_page'>
-        <div className='cardanouncement'>
-        <DashboardCard/>
-        <Anouncement/>
-        </div>
-        <div className='calenderactivity'>
-        <CalenderComponent/>
-        <Birthday/>
-        </div>
+            <div className='cardanouncement'>
+                <DashboardCard/>
+                <Anouncement/>
+            </div>
+            <div className='calenderactivity'>
+                <CalenderComponent/>
+                <Birthday/>
+            </div>
         </div>
         </Layout>
     );

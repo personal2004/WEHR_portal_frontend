@@ -1,10 +1,9 @@
 .sidebar{
    height: 100vh;
-   width: 242px;
+   width: 13vw;
    display: flex;
    flex-direction: column;
    gap:7vh;
-   background-color: #F5F5F5;
 }
 .sidebar h3{ 
     width: 242px; 
@@ -38,4 +37,9 @@
 }
 .menu-section h5 span,.content h5 span{
  font-size: 24px;
+}
+@media only screen and (max-width:1204px){
+    .sidebar{
+        display: none;
+    }
 }
