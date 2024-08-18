@@ -1,0 +1,43 @@
+.ea_page{
+    margin-left:13vw ;
+    display: flex;
+    flex-direction: column;
+}
+.ea_header{
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: left;
+}
+.ea_page_cards{
+    width: 24vw;
+    display: flex;
+    margin:2rem 1rem;
+    justify-content: space-around;
+}
+.ea_page_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    border: 1px;
+    width: 157px;
+    height: 157px;
+    border: 1px 0px 0px 0px;
+}
+.ea_page_card p{
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18.79px;  
+}
+.ea_page_icon{
+     font-size: 30px;
+}
+.ea_page_card:hover{
+    box-shadow: 0px 0px 2px 0px red;
+    color: red;
+    cursor: pointer;
+}

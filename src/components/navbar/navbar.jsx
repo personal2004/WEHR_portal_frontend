@@ -2,15 +2,17 @@ import './navbar.css';
 import React from 'react';
 import icons from '../../constants/icons';
 import { profilepic } from '../../constants/images';
-
+import { useLocation } from 'react-router-dom';
 const Navbar=()=> {
+  const location=useLocation();
+  const showsearchbar=location.pathname==='/dashboard'
   return (
     <>
     <nav className="navbar">
-        <div className='searchbar'>
+        {showsearchbar && <div className='searchbar'>
           <input className='search_bar'type='text' placeholder='Search Employee'></input>
           <button className='search_icon'>{icons.search}</button> 
-        </div>
+        </div>}
         <div className='navbar_content'>
           <div className='notification'>{icons.notification}</div>
           <div className='message'>{icons.message}</div>

@@ -1,5 +1,5 @@
 .navbar {
-    width:84;
+    width:87vw;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -34,10 +34,14 @@
   }
 
 .navbar_content{
+    position: absolute;
+    top: 5%;
+    right:0%;
     width: 364px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 1vw;
+    /* justify-content: space-evenly; */
 }
 .notification,.message{
     font-size: 25px;
@@ -69,14 +73,21 @@
 
     @media only screen and (max-width:1204px){ 
         .navbar {
-            background-color: aliceblue;
             width:100vw;
+        }
+    }
+    @media  only screen and (max-width:800px){
+        .navbar_content{
+             position: relative;
+             top: 0%;
+             right: 0%;
         }
     }
     @media only screen and (max-width:657px){
         .navbar_content h3{
             display: none;
         }
+        
     } 
     @media only screen and (max-width:531px){
         .navbar {

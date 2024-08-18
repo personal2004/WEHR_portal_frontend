@@ -1,22 +1,23 @@
 import "./sidebar.css";
 import icons from "../../constants/icons";
+import { NavLink } from "react-router-dom";
 const SideBar=()=>{
     return(
         <div className="sidebar">
         <h3>WeHR</h3>
         <div className="sidebar_content"> 
-                <div className="menu-section">                  
-                        <h5><span>{icons.dashboard}</span>Dashboard</h5>
-                        <h5><span>{icons.employee}</span>Employee</h5>
-                        <h5><span>{icons.attendance}</span>Attendance</h5>
-                        <h5><span>{icons.payroll}</span>PayRoll</h5>
-                        <h5><span>{icons.task}</span>Task</h5>
-                        <h5><span>{icons.announcement}</span>Announcement</h5> 
+                <div className="menu-section">  
+                    <NavLink to="/dashboard" activeClassName="active"><span>{icons.dashboard}</span>Dashboard</NavLink>  
+                    <NavLink to="/employee" activeClassName="active"><span>{icons.employee}</span>Employee</NavLink>  
+                    <NavLink to="/attendance" activeClassName="active"><span>{icons.attendance}</span>Attendance</NavLink>  
+                    <NavLink to="/#" activeClassName="active"><span>{icons.payroll}</span>PayRoll</NavLink>  
+                    <NavLink to="/#" activeClassName="active"><span>{icons.task}</span>Task</NavLink>  
+                    <NavLink to="/#" activeClassName="active"><span>{icons.announcement}</span>Announcement</NavLink>
                 </div>
                 <h4>OTHER</h4>
                 <div className="content">
-                        <h5><span>{icons.support}</span>Support</h5>
-                        <h5><span>{icons.settings}</span>Settings</h5>
+                    <NavLink to="/#" activeClassName="active"><span>{icons.support}</span>Support</NavLink>  
+                    <NavLink to="/#" activeClassName="active"><span>{icons.settings}</span>Settings</NavLink> 
                 </div>
         </div>
         </div>

@@ -5,7 +5,7 @@ import birthdayboy from '../assets/birthdayboy.jpg';
 import roundblankphoto from '../assets/roundblankphoto.jpg';
 import signinimg from '../assets/signinimg.svg';
 import logo from '../assets/logo.png';
-
+import userprogres from '../assets/userprogress.png';
 export{
     profilepic,
     dashrepo1,
@@ -13,5 +13,6 @@ export{
     birthdayboy,
     roundblankphoto,
     signinimg,
-    logo
+    logo,
+    userprogres
 }

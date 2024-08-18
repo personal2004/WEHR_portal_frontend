@@ -3,10 +3,12 @@ import { BsCalendar2EventFill, BsFillPersonPlusFill } from "react-icons/bs";
 import { HiMiniUserGroup } from "react-icons/hi2";
 import { VscTasklist } from "react-icons/vsc";
 import { CiShare2,CiSearch, CiLock  } from "react-icons/ci";
-import { PiHeadsetFill } from "react-icons/pi";
+import { PiHeadsetFill,PiBuildingApartmentThin } from "react-icons/pi";
 import { IoSettingsSharp,IoBagHandleOutline } from "react-icons/io5";
 import { VscBellDot } from "react-icons/vsc";
 import { FiArrowDown } from "react-icons/fi";
+import { GoPersonAdd } from "react-icons/go";
+
 
 const icons = {
   dashboard: <RiDashboardHorizontalFill/>,
@@ -22,7 +24,9 @@ const icons = {
   notification:<VscBellDot/>,
   downarrow:<FiArrowDown/>,
   companyId:<IoBagHandleOutline/>,
-  password:<CiLock/>
+  password:<CiLock/>,
+  personadd:<GoPersonAdd/>,
+  organ:<PiBuildingApartmentThin/>
 };
 
 export default icons;

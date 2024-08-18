@@ -35,6 +35,37 @@
     padding-left: 2.5vw;
     cursor: pointer;
 }
+.sidebar_content a {
+    color:#686868;
+    text-decoration: none;
+    display: flex;
+    gap:16px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 2.5vw;
+    cursor: pointer;
+  }
+  .sidebar_content a.active {
+    text-decoration: none;
+    color: red;
+    display: flex;
+    gap:16px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 2.5vw;
+    cursor: pointer;
+  }
+  
+  .sidebar_content a span{
+    font-size: 24px;
+  }
+  .sidebar_content a.active span{
+    font-size: 24px;
+  }
 .menu-section h5 span,.content h5 span{
  font-size: 24px;
 }
