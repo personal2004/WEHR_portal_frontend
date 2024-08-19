@@ -3,10 +3,11 @@ import DashboardPage from './pages/dashBoard/dashboradPage';
 import {BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import SignIn from './pages/signIn/signin';
 import Employee from './pages/employee/employeePage';
-import EmployeList from './components/attendanceList/EmployeList';
-import AddEmploye from './components/addEmployee/addEmploye';
+import EmployeList from './pages/attendanceListPage/EmployeList';
+import AddEmploye from './pages/addEmployee/addEmploye';
 import Attendance from './pages/attendance/attendance';
 import LeaveRequest from './pages/leaveRequest/leavepage';
+
 
 function App() {
   return (

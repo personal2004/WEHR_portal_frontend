@@ -1,13 +1,12 @@
 .navbar {
     width:87vw;
-    height: 10vh;
+    height:8vh;
     display: flex;
     align-items: center;
     justify-content:space-between;
     padding: 0px 0px 0px 50px;
     position: relative;
   }
-
 .searchbar{
     position: relative;
  } 

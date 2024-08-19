@@ -2,8 +2,9 @@ import Layout from '../../components/layout/layout';
 import { useLocation } from 'react-router-dom';
 import './index.css';
 import EAcard from '../../components/cards/eacard/eacard';
-import EmployeList from '../../components/attendanceList/EmployeList';
-import AddEmploye from '../../components/addEmployee/addEmploye';
+import AddEmploye from '../addEmployee/addEmploye';
+import EmployeList from '../attendanceListPage/EmployeList';
+
 
 
 const Employee=()=>{

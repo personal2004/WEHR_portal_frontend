@@ -7,9 +7,9 @@ import { PiHeadsetFill,PiBuildingApartmentThin } from "react-icons/pi";
 import { IoSettingsSharp,IoBagHandleOutline } from "react-icons/io5";
 import { VscBellDot } from "react-icons/vsc";
 import { FiArrowDown } from "react-icons/fi";
-import { GoPersonAdd } from "react-icons/go";
-
-
+import { GoPersonAdd,GoDot } from "react-icons/go";
+import { FaPlus } from "react-icons/fa6";
+import { BiDotsHorizontalRounded } from "react-icons/bi";
 const icons = {
   dashboard: <RiDashboardHorizontalFill/>,
   attendance: <BsCalendar2EventFill/>,
@@ -26,7 +26,10 @@ const icons = {
   companyId:<IoBagHandleOutline/>,
   password:<CiLock/>,
   personadd:<GoPersonAdd/>,
-  organ:<PiBuildingApartmentThin/>
+  organ:<PiBuildingApartmentThin/>,
+  plus:<FaPlus/>,
+  threedot:<BiDotsHorizontalRounded/>,
+  circle:<GoDot/>
 };
 
 export default icons;

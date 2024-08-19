@@ -22,7 +22,16 @@ const birthdata=[{img:birthdayboy,name:'Robert Whistable',position:'Product mana
 ]
 const employeeCard=[{header:'Employee',icon:icons.personadd,name:'Employee'},{icon:icons.organ,name:'Org Config'}]
 const attendanceCard=[{header:'Attendance',icon:icons.personadd,name:'Leave Request'},{icon:<img src={userprogres} alt='attendance'/>,name:'Attendances'}]
-
+const employeetable=[{name:{rollnum:'11D001',name:'MAGHESH',email:'magesh@Dotcod.in'},date:'1/2/23',designation:'Software Engineer',status:'Confirmed',options:'...'},
+    {name:{rollnum:'11D001',name:'Tesla',email:'Rsahull@Dotcod.in'},date:'4/5/22',designation:'Software Engineer',status:'Probation',options:'...'},
+    {name:{rollnum:'11D002',name:'GM',email:'gm@Dotcod.in'},date:'7/9/22',designation:'Software Engineer',status:'Confirmed',options:'...'},
+    {name:{rollnum:'11D003',name:'AARP',email:'aarp @Dotcod.in'},date:'1/2/23',designation:'Software Engineer',status:'Probation',options:'...'},
+    {name:{rollnum:'11D003',name:'Disney ',email:'@Dotcod.in'},date:'7/2/221',designation:'Software Engineer',status:'Confirmed',options:'...'},
+    {name:{rollnum:'11D003',name:'Prime Theraputics ',email:'@Dotcod.in'},date:'12/1/23',designation:'Software Engineer',status:'Probation',options:'...'},
+    {name:{rollnum:'11D004',name:'Match.com',email:' CODE@Dotcod.in'},date:'21/2/23',designation:'Software Engineer',status:'Confirmed',options:'...'},
+    {name:{rollnum:'11D005',name:'Chevy ',email:'@Dotcod.in'},date:'11/7/23',designation:'Software Engineer',status:'Probation',options:'...'},
+]
+const attendancetable=[]
 export{
     dashboardcard,
     dashboardreport,
@@ -30,4 +39,5 @@ export{
     birthdata,
     employeeCard,
     attendanceCard,
+    employeetable
 }
