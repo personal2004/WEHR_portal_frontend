@@ -8,7 +8,6 @@ import AddEmploye from './pages/addEmployee/addEmploye';
 import Attendance from './pages/attendance/attendance';
 import LeaveRequest from './pages/leaveRequest/leavepage';
 
-
 function App() {
   return (
     <div className="App">

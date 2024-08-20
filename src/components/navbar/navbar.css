@@ -10,7 +10,13 @@
 .searchbar{
     position: relative;
  } 
-
+.addemp_nav_header{
+        font-family: 'Poppins';
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 42px;
+        text-align: left;
+}
 .search_bar{
     width: 343px;
     height: 44px;

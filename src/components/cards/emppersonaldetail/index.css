@@ -1,0 +1,51 @@
+.personalofemp_card{
+    width: 85vw;
+    height: 26vh;
+    box-shadow: 0px 0px 0.9px 0px rgba(0,0,0,0.75);
+    border-radius: 13px;
+}
+.personalofemp_card_header{
+    display: flex;
+    font-family:'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: left;
+    justify-content: space-between;
+    padding: 10px 35px 0px 60px;
+}
+.personalofemp_card_header span{
+    font-size: 30px;
+}
+.personalofemp_input{
+    padding-left:5vw;
+    width: 70vw;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+.personalofemp_input label{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+}
+.personalofemp_input span{
+    color: red;
+}
+.personalofemp_input input{
+    width: 277px;
+    height: 40px;
+    padding-left:30px;
+    border-radius: 6px;
+    border: 1px solid #C4C4C4;    
+    margin-top: 10px;
+    outline: none;
+}
+.personalofemp_input div{
+    display: flex;
+    flex-direction: column;
+}

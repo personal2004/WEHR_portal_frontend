@@ -1,12 +1,18 @@
-import Layout from '../../components/layout/layout';
+import EmpDetailCard from '../../components/cards/empdetail/empdetail';
+import EmpFootCard from '../../components/cards/empfootcard/empfootcard';
+import EmpPersonalInfoCard from '../../components/cards/emppersonaldetail/emppersonalinfocard';
+import icons from '../../constants/icons';
 import './index.css';
 
 const AddEmploye=()=>{
     return(
-        <Layout>
-        <div className='addEmplyPage'>
-        </div>
-        </Layout>
+         <div className='addemp_page'>
+         <EmpDetailCard/>
+         <EmpPersonalInfoCard/>
+         <EmpFootCard title='Department' icon={icons.circleplus}/>
+         <EmpFootCard title='Configuration' cancel='Cancel' save='Save'/>
+         </div>
+
     );
 }
 

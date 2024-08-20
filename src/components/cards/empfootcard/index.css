@@ -1,0 +1,40 @@
+.empfoot_card{
+    width: 85vw;
+    height: 10vh;
+    padding-left:60px;
+    box-shadow: 0px 0px 0.9px 0px rgba(0,0,0,0.75);
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.empfoot_card span{ 
+    margin-left:9vw;
+    font-size: 30px;
+}
+.empfoot_card h3{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 18.75px;
+    text-align: left;
+}
+.empfootend{
+    display: flex;
+    width: 15vw;
+    justify-content: space-around;
+}
+.empfootend button{
+    width:78px;
+    height:39px;
+    padding: 8px 12px 8px 12px;
+    border-radius: 10px;
+    border: 1px 0px 0px 0px;
+}
+.cancel_button{
+  background-color: white;
+}
+.save_button{
+    color: white;
+    background-color: black;
+}

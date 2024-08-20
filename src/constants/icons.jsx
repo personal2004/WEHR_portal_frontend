@@ -2,7 +2,7 @@ import { RiDashboardHorizontalFill,RiMessage2Fill } from "react-icons/ri";
 import { BsCalendar2EventFill, BsFillPersonPlusFill } from "react-icons/bs";
 import { HiMiniUserGroup } from "react-icons/hi2";
 import { VscTasklist } from "react-icons/vsc";
-import { CiShare2,CiSearch, CiLock  } from "react-icons/ci";
+import { CiShare2,CiSearch, CiLock , CiCircleMinus,CiCirclePlus} from "react-icons/ci";
 import { PiHeadsetFill,PiBuildingApartmentThin } from "react-icons/pi";
 import { IoSettingsSharp,IoBagHandleOutline } from "react-icons/io5";
 import { VscBellDot } from "react-icons/vsc";
@@ -10,6 +10,7 @@ import { FiArrowDown } from "react-icons/fi";
 import { GoPersonAdd,GoDot } from "react-icons/go";
 import { FaPlus } from "react-icons/fa6";
 import { BiDotsHorizontalRounded } from "react-icons/bi";
+
 const icons = {
   dashboard: <RiDashboardHorizontalFill/>,
   attendance: <BsCalendar2EventFill/>,
@@ -29,7 +30,9 @@ const icons = {
   organ:<PiBuildingApartmentThin/>,
   plus:<FaPlus/>,
   threedot:<BiDotsHorizontalRounded/>,
-  circle:<GoDot/>
+  circle:<GoDot/>,
+  circleminus:<CiCircleMinus/>,
+  circleplus:<CiCirclePlus/>
 };
 
 export default icons;
