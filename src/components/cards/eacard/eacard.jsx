@@ -5,12 +5,9 @@ const EAcard=()=>{
     const location=useLocation();
     const constant=location.pathname==='/employee'?employeeCard:attendanceCard;
     const navigate=useNavigate();
-    const navigatepage=()=>{
-        if (location.pathname==='/employee'){
-            navigate('employeelist')
-        }else{
-             navigate('/attendance/leaverequest')
-        }
+
+    const navigatepage=(path)=>{
+            navigate(path);
     }
     return(
         <div className='ea_page'>
@@ -18,7 +15,7 @@ const EAcard=()=>{
             <div className='ea_page_cards'>
                 {constant.map((data,index)=>{
                     return(
-                    <div key={index} className='ea_page_card' onClick={navigatepage}>
+                    <div key={index} className='ea_page_card' onClick={()=>navigatepage(data?.path)}>
                         <div className='ea_page_icon'>{data.icon}</div>
                         <p>{data.name}</p>
                     </div> 

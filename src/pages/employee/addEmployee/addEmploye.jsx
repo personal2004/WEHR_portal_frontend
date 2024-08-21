@@ -1,7 +1,8 @@
-import EmpDetailCard from '../../components/cards/empdetail/empdetail';
-import EmpFootCard from '../../components/cards/empfootcard/empfootcard';
-import EmpPersonalInfoCard from '../../components/cards/emppersonaldetail/emppersonalinfocard';
-import icons from '../../constants/icons';
+import EmpDetailCard from '../../../components/cards/empdetail/empdetail';
+import EmpFootCard from '../../../components/cards/empfootcard/empfootcard';
+import EmpPersonalInfoCard from '../../../components/cards/emppersonaldetail/emppersonalinfocard';
+import icons from '../../../constants/icons';
+
 import './index.css';
 
 const AddEmploye=()=>{
