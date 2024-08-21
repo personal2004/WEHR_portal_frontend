@@ -22,6 +22,7 @@ function App() {
           <Route path='/attendance' exact element={<Attendance/>}>
             <Route path='leaverequest'exact element={<LeaveRequest/>}/>
             <Route path='attendancelist' exact element={<EmployeAttenList/>}/>
+            <Route path='addemployee'exact element={<AddEmploye/>}/>
           </Route>
         </Routes>
       </Router>   

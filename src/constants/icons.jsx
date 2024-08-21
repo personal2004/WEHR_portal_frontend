@@ -10,6 +10,7 @@ import { FiArrowDown } from "react-icons/fi";
 import { GoPersonAdd,GoDot } from "react-icons/go";
 import { FaPlus } from "react-icons/fa6";
 import { BiDotsHorizontalRounded } from "react-icons/bi";
+import { FaRegCheckCircle,FaTimesCircle } from "react-icons/fa";
 
 const icons = {
   dashboard: <RiDashboardHorizontalFill/>,
@@ -32,7 +33,9 @@ const icons = {
   threedot:<BiDotsHorizontalRounded/>,
   circle:<GoDot/>,
   circleminus:<CiCircleMinus/>,
-  circleplus:<CiCirclePlus/>
+  circleplus:<CiCirclePlus/>,
+  circlecorrect:<FaRegCheckCircle />,
+  circlewrong:<FaTimesCircle/>
 };
 
 export default icons;

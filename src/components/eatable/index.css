@@ -12,9 +12,8 @@
 .eatable_header{
   width: 83vw;
   display: flex;
-  justify-content: space-between;
+  gap:60vw ;
 }
-
 .eatable_header h4{
   font-family: 'Inter';
   font-size: 17px;
@@ -31,7 +30,17 @@
   color: #2F2F2F66;
   margin-left: 2vw;
 }
+.eatable_header_search{
+ position: relative;
+}
+.eatable_header_search span{
+  font-size:25px;
+  padding-top:3px;
+  left: 0.2vw;
+  position: absolute;
+}
 .eatable_header input{
+  position: relative;
   padding-left: 2vw;
   width: 197px;
   height: 38px;

@@ -1,0 +1,47 @@
+.colorcards{
+    display: flex;
+    justify-content: space-between;
+    width: 52vw;
+    height:15vh;
+}
+.colorcard{
+    width: 16vw;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 12px 12px 12px 20px;
+    border-radius: 10px;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.colorcard p{
+    height: 24px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: right;
+}
+
+@media only screen and (max-width:1204px){
+    .colorcards{
+        width: 100vw;
+    }
+    .colorcard{
+     width: 32vw;
+     margin-right: 3vw;
+    }
+}
+@media only screen and (max-width:537px){
+    .colorcards{
+      height: 35vh;
+      flex-direction: column;
+      gap:2vh;
+    }
+    .colorcard{
+        width: 96vw;
+        height: 18vh;
+    }
+    
+}

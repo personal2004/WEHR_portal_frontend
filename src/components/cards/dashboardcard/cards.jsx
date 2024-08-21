@@ -1,19 +1,12 @@
 import { dashboardcard, dashboardreport } from '../../../constants/jsonconstant';
+import Colorcard from '../colorcard/colorcard';
 import './cards.css';
 
 const DashboardCard=()=>{
  return(
     <div className='dashnoardcard'>
     <h3>Dashboard</h3>
-    <div className='colorcards'>
-        {dashboardcard.map((data,index)=>{
-            return(
-            <div key={index} className='colorcard' style={{ backgroundColor: data.color }}>
-                    <h4>{data.subject}</h4>
-                    <h4>{data.count}</h4>
-                </div>);
-        })}
-    </div>
+    <Colorcard cardcontent={dashboardcard}/>
     <div className='cardreports'>
         {dashboardreport.map((data,index)=>{
             return(

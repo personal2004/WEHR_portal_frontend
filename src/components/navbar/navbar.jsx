@@ -7,6 +7,7 @@ const Navbar=()=> {
   const location=useLocation();
   const showsearchbar=location.pathname==='/dashboard'
   const isaddemp=location.pathname==='/employee/addemployee'
+  const isleaverequest=location.pathname==='/attendance/leaverequest'
   return (
     <>
     <nav className="navbar">
@@ -17,6 +18,7 @@ const Navbar=()=> {
         {
           isaddemp && <h3 className='addemp_nav_header'>Employee</h3>
         }
+        {isleaverequest && <h3 className='leave_nav_header'>Leave Request</h3>}
         <div className='navbar_content'>
           <div className='notification'>{icons.notification}</div>
           <div className='message'>{icons.message}</div>

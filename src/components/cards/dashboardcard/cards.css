@@ -11,23 +11,7 @@
     line-height: 42px;
     text-align: left;
 }
-.colorcards{
-    display: flex;
-    justify-content: space-between;
-    width: 52vw;
-    height:15vh;
-}
-.colorcard{
-    width: 16vw;
-    font-weight: 500;
-    font-size: 18px;
-    padding: 12px 12px 12px 20px;
-    border-radius: 10px 0px 0px 0px;
-    text-align:left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
+
 .cardreports{
     display: flex;
     justify-content: space-between;
@@ -77,12 +61,9 @@
 }
 
 @media only screen and (max-width:1204px){
-    .dashnoardcard,.colorcards,.cardreports{
+
+    .dashnoardcard.cardreports{
         width: 100vw;
-    }
-    .colorcard{
-     width: 32vw;
-     margin-right: 3vw;
     }
     .cardreport{
         width: 48vw;
@@ -97,11 +78,6 @@
     }
 }
 @media only screen and (max-width:537px){
-    .colorcards{
-      height: 35vh;
-      flex-direction: column;
-      gap:2vh;
-    }
     .cardreports{
       flex-direction: column;
       gap:2vh;
@@ -109,10 +85,6 @@
     }
     .dashnoardcard{
         height:70vh;
-    }
-    .colorcard{
-        width: 96vw;
-        height: 18vh;
     }
     .cardreport{
         width: 96vw;

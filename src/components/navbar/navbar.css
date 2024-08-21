@@ -17,6 +17,15 @@
         line-height: 42px;
         text-align: left;
 }
+.leave_nav_header{
+    margin-left: 0%;
+    padding-left: 0%;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: left;
+}
 .search_bar{
     width: 343px;
     height: 44px;

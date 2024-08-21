@@ -1,23 +1,23 @@
 import './index.css';
 import icons from '../../constants/icons';
 import { useState } from 'react';
-const Eatable=({tablecon})=>{
+const Eatable=({tablecon,height,width})=>{
 
     const [searchvalue,setsearchvalue]=useState('');
     
-    const filteredEmployees = searchvalue ? tablecon.filter(data =>
+    const filteredEmployees = searchvalue ?tablecon.filter(data =>
             data.name.name.toLowerCase().includes(searchvalue.toLowerCase()) ||
-            data.name.rollnum.toLowerCase().includes(searchvalue.toLocaleLowerCase())
+            (data.name?.rollnum || '').toLowerCase().includes(searchvalue.toLocaleLowerCase())
         )
     : tablecon;
 
     return(
-        <div className='eatable_component'>
+        <div className='eatable_component' style={{height:height,width:width}}>
             <div className='eatable_header'>
                    <h4>{tablecon[0].data.dataname}<span>{tablecon[0].data.count}</span></h4>
-                    <div>
-                    <span style={{fontSize:"25px",position:'absolute',paddingTop:'3px',paddingLeft:'5px'}}>{icons.search}</span>
+                    <div className='eatable_header_search'>
                     <input type='text' placeholder='Type here…' onChange={(e)=>setsearchvalue(e.target.value)}/>
+                    <span>{icons.search}</span>
                     </div>
             </div> 
             <table>
@@ -26,7 +26,9 @@ const Eatable=({tablecon})=>{
                         <th>{tablecon[0].header.col2}</th>
                         <th>{tablecon[0].header.col3}</th>
                         <th>{tablecon[0].header.col4}</th>
-                        <th style={{color:'#808080'}}>{tablecon[0].header.col5}</th>                        
+                        <th>{tablecon[0].header.col5}</th>
+                        <th>{tablecon[0].header.col6}</th>
+                        <th style={{color:'#808080'}}>{tablecon[0].header.col7}</th>                       
                     </tr>
                     {filteredEmployees.map((data,index)=>{
                         return(
@@ -43,6 +45,8 @@ const Eatable=({tablecon})=>{
                                 </td>
                                 <td>{data.date}</td>
                                 <td>{data.designation}</td>
+                                <td>{data?.Reason}</td>
+                                <td>{data?.days}</td>
                                 <td>{data.status}</td>
                                 <td style={{color:'#808080'}}>{icons.threedot}</td> 
                             </tr>
