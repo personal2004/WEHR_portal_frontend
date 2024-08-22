@@ -21,7 +21,7 @@ const announcementdata=[{topic:'Outing schedule for every departement',time:'5 M
 ]
    
 const birthdata=[{img:birthdayboy,name:'Robert Whistable',position:'Product manager',date:'15 feb 1998'},
-    {img:roundblankphoto,name:'Robert Whistable',position:'Product manager',date:''},
+    {img:roundblankphoto,name:'Robert Whistable',position:'Product manager',date:'22 August 2024'},
     {img:birthdayboy,name:'Robert Whistable',position:'Product manager',date:'15 feb 1998'},
 ]
 const employeeCard=[{header:'Employee',icon:icons.personadd,name:'Employee',path:'/employee/employeelist'},{icon:icons.organ,name:'Org Config'}]

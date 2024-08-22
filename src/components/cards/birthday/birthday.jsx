@@ -1,11 +1,11 @@
 import './index.css';
-import { birthdata } from '../../../constants/jsonconstant';
-const Birthday=()=>{
+
+const Birthday=({birthaydata})=>{
     return(
         <div className='birthdayCards'>
             <h3 className='birthdayCards_header'>Birthday Calender</h3>
             <div className='birthday_cards'>
-            {birthdata.map((data,index)=>{
+            {birthaydata.map((data,index)=>{
                 return(
                 <div key={index} className='birthday_card'>
                     <img src={data.img} alt='profile_pic'/>
