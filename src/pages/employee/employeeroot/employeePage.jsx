@@ -1,4 +1,3 @@
-import Layout from '../../../components/layout/layout';
 import { useLocation } from 'react-router-dom';
 import './index.css';
 import EAcard from '../../../components/cards/eacard/eacard';
@@ -11,7 +10,7 @@ const Employee=()=>{
      const showemployelist=location.pathname==='/employee/employeelist';
      const showaddemployepage=location.pathname==='/employee/addemployee';
     return(    
-        <Layout>
+<>
             {showmeployeepage &&
                     <EAcard/>
             }
@@ -21,7 +20,7 @@ const Employee=()=>{
            {showaddemployepage &&
                 <AddEmploye/>
         }
-        </Layout>    
+</>  
     );
 }
 export default Employee;

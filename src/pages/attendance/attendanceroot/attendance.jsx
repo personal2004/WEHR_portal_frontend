@@ -1,7 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import './index.css';
 import EAcard from '../../../components/cards/eacard/eacard';
-import Layout from '../../../components/layout/layout';
 import EmployeAttenList from '../../employattendanceListPage/employeAttenList';
 import {attendancetable}from '../../../constants/jsonconstant';
 import LeaveRequest from '../leaveRequest/leavepage';
@@ -14,7 +13,7 @@ const Attendance=()=>{
     const showleavepage=location.pathname==='/attendance/leaverequest';
     const  showaddemp=location.pathname==="/attendance/addemployee";
     return(
-        <Layout>
+        <>
                 {showattendancecard &&
                         <EAcard/>
                  }
@@ -27,7 +26,7 @@ const Attendance=()=>{
                  {showaddemp &&
                     <AddEmploye/>
                  }
-        </Layout>
+        </>
     );
 }
 

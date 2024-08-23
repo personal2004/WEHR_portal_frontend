@@ -1,5 +1,4 @@
 import './index.css'
-import icons from '../../../constants/icons';
 const EmpFootCard=({title,icon='',cancel='',save=''})=>{
     return(
         <div className='empfoot_card'>
