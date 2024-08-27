@@ -17,8 +17,9 @@
 .layout_content {
     height: 90%; 
 }
-  @media only screen and (max-width:1204px){
-  .layout_navbar{
-    /* display: none; */
-  }
+
+@media  only screen and (max-width:1190px){
+   .layout_navbar{
+    height: fit-content;
+   }
 }

@@ -23,7 +23,7 @@ const Anouncement=()=>{
             anouncount=index
             return(
                <div key={index} className='anoun_content'>
-                     <div>
+                     <div className='anoun_schedule'>
                      <h3>{data.topic}</h3>
                      <p>{data.time}</p>
                      </div>

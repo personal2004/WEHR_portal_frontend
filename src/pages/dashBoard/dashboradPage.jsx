@@ -10,7 +10,7 @@ const DashboardPage=()=>{
                 <Anouncement/>
             </div>
                 <CalenderComponent/>
-            </div>
+        </div>
     );
 }
 

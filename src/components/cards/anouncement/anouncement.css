@@ -53,19 +53,23 @@
     box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
     border: 1px;
 }
-.anoun_content h3{
+.anoun_schedule h3{
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 13px;
     text-align: left;
     padding:8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
+
 .anoun_content p{
     font-family: 'Roboto';
     font-size: 10px;
     font-weight: 400;
-    line-height: 14px;
+    line-height:0px;
     text-align: left;
     padding:5px;
 
@@ -106,6 +110,7 @@
 @media only screen and (max-width:1204px){
     .anouncement_card{
         width: 97vw;
+        height: 40vh;
     }
     .anoun_more{
         width: 100vw;

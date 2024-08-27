@@ -31,7 +31,10 @@
 }
 
 @media only screen and (max-width:537px){
+    .calender{
+        height:50vh;
+    }
     .calenderactivity{
-        gap: 0;
+        gap:0px;
     }
 }

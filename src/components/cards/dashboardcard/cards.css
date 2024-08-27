@@ -1,6 +1,6 @@
 .dashnoardcard{
     width: 52vw;
-    height: 45vh;
+    height: 49vh;
 }
 .dashnoardcard h3{
     height:7vh;
@@ -60,13 +60,21 @@
     
 }
 
+@media screen and (max-width:1246px) {
+    .cardreport{
+        height: fit-content;
+    }
+}
 @media only screen and (max-width:1204px){
-
-    .dashnoardcard.cardreports{
+   .dashnoardcard{
+     width: 100vw;
+   }
+   .cardreports{
         width: 100vw;
     }
     .cardreport{
         width: 48vw;
+        height: fit-content;
         margin-right: 3vw;
     }
     .card_item{
@@ -78,16 +86,15 @@
     }
 }
 @media only screen and (max-width:537px){
+    .dashnoardcard{
+        width: 100vw;
+        height: 110vh;
+      }
     .cardreports{
       flex-direction: column;
       gap:2vh;
-      height:40vh;
-    }
-    .dashnoardcard{
-        height:70vh;
     }
     .cardreport{
         width: 96vw;
-        height: 20vh;
     }
 }

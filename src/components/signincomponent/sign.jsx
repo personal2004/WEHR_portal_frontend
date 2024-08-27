@@ -3,8 +3,9 @@ import {logo} from '../../constants/images';
 import icons from '../../constants/icons';
 import { useNavigate } from 'react-router-dom';
 import {useState } from 'react';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../../utils/firebase';
+import {checkValidateData} from '../../functions/validate';
+// import { createUserWithEmailAndPassword } from 'firebase/auth';
+// import { auth } from '../../utils/firebase';
 
 const SignInCard=()=>{
     const navigate=useNavigate();
@@ -14,13 +15,16 @@ const SignInCard=()=>{
     const [ischecked,setischecked]=useState();
 
     const handleSignIn=async()=>{
-        navigate('/dashboard');
-        try{
-           await createUserWithEmailAndPassword(auth,employeid,password);
-            const user=await auth.currentUser;
-        }catch(error){
-            console.log(error);
-            }
+
+        if (checkValidateData(employeid,password)===null && ischecked){
+            navigate('/dashboard');
+        }
+        // try{
+        //    await createUserWithEmailAndPassword(auth,employeid,password);
+        //     const user=await auth.currentUser;
+        // }catch(error){
+        //     console.log(error);
+        //     }
     }   
     return(
         <div className='signInCard'>

@@ -11,14 +11,15 @@ const CalenderComponent=()=>{
 
     useEffect(() => {
         const updatedBirthdays = birthdata.filter((birthday) => {
-            return birthday.date!=='' && new Date(birthday.date).toDateString() === selectedDate.toDateString();
+            return birthday.date!=='' &&
+             new Date(birthday.date)>= new Date(selectedDate);
         });
         setFilteredBirthdays(updatedBirthdays);
     }, [selectedDate]);
 
     useEffect(() => {
         const todayBirthdays = birthdata.filter((birthday) => {
-            return birthday.date!=='' && new Date(birthday.date).toDateString() === new Date().toDateString();
+            return birthday.date!=='' && new Date(birthday.date) >= new Date();
         });
         setFilteredBirthdays(todayBirthdays);
     }, []); 

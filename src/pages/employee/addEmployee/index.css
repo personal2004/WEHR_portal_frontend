@@ -1,5 +1,6 @@
 .addemp_page{
-    width: 87vw;
+    margin-left: 1vw;
+    width: 86vw;
     height: 92vh;
     display: flex;
     flex-direction: column;
