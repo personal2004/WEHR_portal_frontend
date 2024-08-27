@@ -39,9 +39,9 @@ const Eatable=({tablecon,height,width})=>{
                                 <td>
                                     <div style={{display:'flex',gap:'30px'}}>
                                        <span style={{color:'#808080',fontSize:'20px'}}>{icons.circle}</span> 
-                                        <h4 style={{color:'black'}}>{data.name?.rollnum}</h4>
+                                        <h4 className='table_col_row_one'>{data.name?.rollnum}</h4>
                                         <div>
-                                            <h4 style={{color:'black'}}>{data.name.name}</h4>
+                                            <h4 className='table_col_row_one'>{data.name.name}</h4>
                                             <p>{data.name.email}</p>  
                                         </div>
                                     </div>

@@ -14,23 +14,21 @@ const SignInCard=()=>{
     const [ischecked,setischecked]=useState();
 
     const handleSignIn=async()=>{
+        navigate('/dashboard');
         try{
            await createUserWithEmailAndPassword(auth,employeid,password);
-            const user=auth.currentUser;
-            console.log(user);
-            // navigate('/dashboard')
+            const user=await auth.currentUser;
         }catch(error){
-           console.log(error);
-        }
-
-    }
-    
+            console.log(error);
+            }
+    }   
     return(
         <div className='signInCard'>
             <div className='signInCard_logo'>
                 <img  src={logo} alt='logo'/>
                 <h3>Your Logo</h3>
             </div>
+
             <form className='signinform'onSubmit={handleSignIn}>
             <h1>Sign Into</h1>
             <h3>Your Account</h3>
@@ -40,8 +38,9 @@ const SignInCard=()=>{
                 <input type='password' placeholder='Password'onChange={(e)=>setpassword(e.target.value)}/></div>
             <div className='signcheckbox'>
                 <input type='checkbox'onChange={(e)=>setischecked(e.target.checked)}/><span>Remember Me</span></div>  
-            <button className='signinbutton' type='submit' onClick={handleSignIn}>Sign In</button>
+            <button className='signinbutton' type='submit'>Sign In</button>
             </form>
+            
         </div>
     )
 }

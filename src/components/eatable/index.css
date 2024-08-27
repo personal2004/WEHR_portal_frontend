@@ -8,6 +8,7 @@
    padding:1%;
    overflow-x: hidden;
    overflow-y:auto;
+   margin-left: 1.5vw;
 }
 .eatable_header{
   width: 83vw;
@@ -28,15 +29,15 @@
   line-height: 22px;
   text-align: left;
   color: #2F2F2F66;
-  margin-left: 2vw;
+  margin-left: 1.5vw;
 }
 .eatable_header_search{
  position: relative;
 }
 .eatable_header_search span{
   font-size:25px;
-  padding-top:3px;
   left: 0.2vw;
+  bottom: 0.2vw;
   position: absolute;
 }
 .eatable_header input{
@@ -45,6 +46,10 @@
   width: 197px;
   height: 38px;
   border: 1px 0px 0px 0px;
+}
+.table_col_row_one{
+  color: black;
+  font-size: 14px;
 }
 table th{
   width: 125px;
