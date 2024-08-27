@@ -2,8 +2,8 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCjgZz4cL4s5iAbHhT73HEFUiAGbUlfCuo",
-  authDomain: "wehr-73a49.firebaseapp.com",
+  apiKey: process.env.FIREBASE_APP_API_KEY,
+  authDomain: process.env.FIREBASE_APP_AUTH_DOMAIN,
   projectId: "wehr-73a49",
   storageBucket: "wehr-73a49.appspot.com",
   messagingSenderId: "995441277332",
