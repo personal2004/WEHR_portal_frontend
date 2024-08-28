@@ -13,6 +13,7 @@ const Eatable=({tablecon,height,width})=>{
     : tablecon;
 
     const isleaverequestpage=location.pathname==="/attendance/leaverequest";
+    const isemployeepage=location.pathname==="/employee/employeelist";
     return(
         <div className='eatable_component' style={{height:height,width:width}}>
             <div className='eatable_header'>
@@ -25,7 +26,13 @@ const Eatable=({tablecon,height,width})=>{
             <table>
                     <tr>
                         <th>{tablecon[0].header.col1}</th>
-                        <th>{tablecon[0].header.col2}</th>
+                         {isemployeepage?
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        <option selected>Joined date</option>
+                        <option value="1">Created date</option>
+                        <option value="2">Releved Dated</option>
+                        <option value="3">Salary Hike date by</option>
+                        </select> :<th>{tablecon[0].header.col2}</th>}
                         <th>{tablecon[0].header.col3}</th>
                         <th>{tablecon[0].header.col4}</th>
                         <th style={isleaverequestpage?{color:'#4F5E74'}:{color:'#808080'}}>{tablecon[0].header.col5}</th>
@@ -51,7 +58,15 @@ const Eatable=({tablecon,height,width})=>{
                                {isleaverequestpage && <td style={isleaverequestpage?{color:'#4F5E74'}:{display:'none'}}>{data.Reason}</td>}
                                {isleaverequestpage && <td style={isleaverequestpage?{color:'#4F5E74'}:{display:'none'}}>{data.days}</td>}
                                 <td>{data.status}</td>
-                                <td style={{color:'#808080'}}>{icons.threedot}</td> 
+                                <td >
+                                      <div class='threedot'>{icons.threedot}</div>
+                                      <div className='leave_action'>
+                                        <h5>{icons.correct} Approve Leave</h5> 
+                                        <h5>{icons.wrong} Reject Leave</h5>
+                                        <h5>{icons.eye} View Details</h5>
+                                      </div>
+                                </td> 
+                              
                             </tr>
                         );
                     })}
