@@ -16,9 +16,9 @@ const SignInCard=()=>{
 
     const handleSignIn=async()=>{
 
-        if (checkValidateData(employeid,password)===null && ischecked){
+        if(ischecked && (checkValidateData(employeid,password))){
             navigate('/dashboard');
-        }
+        }       
         // try{
         //    await createUserWithEmailAndPassword(auth,employeid,password);
         //     const user=await auth.currentUser;
@@ -36,12 +36,16 @@ const SignInCard=()=>{
             <form className='signinform'onSubmit={handleSignIn}>
             <h1>Sign Into</h1>
             <h3>Your Account</h3>
-            <div className='signin_input'><span>{icons.companyId}</span>
-                <input type='email' placeholder='Company ID'onChange={(e)=>setemploeid(e.target.value)}/></div>
-            <div className='signin_input'><span>{icons.password}</span>
-                <input type='password' placeholder='Password'onChange={(e)=>setpassword(e.target.value)}/></div>
+            <div className='signin_input'>
+                <input type='email' placeholder='Company ID'onChange={(e)=>setemploeid(e.target.value)}/>
+                <span>{icons.companyId}</span>
+            </div>
+            <div className='signin_input'>
+                <input type='password' placeholder='Password'onChange={(e)=>setpassword(e.target.value)}/>
+                <span>{icons.password}</span>
+            </div>
             <div className='signcheckbox'>
-                <input type='checkbox'onChange={(e)=>setischecked(e.target.checked)}/><span>Remember Me</span></div>  
+                <input type='checkbox' writingsuggestions="on"onChange={(e)=>setischecked(e.target.checked)}/><span>Remember Me</span></div>  
             <button className='signinbutton' type='submit'>Sign In</button>
             </form>
             
