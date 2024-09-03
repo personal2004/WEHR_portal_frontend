@@ -1,13 +1,14 @@
 .employeListPage{
     height: 90vh;
     width: 87vw;
+    padding-left: 30px;
 }
 .emplist_header{
     height:7vh;
-    width: 87vw;
+    width: 85vw;
     display: flex;
     align-items: center;
-    gap:57vw ;
+    gap:55vw ;
 }
 .emplist_header h3{
     width: fit-content;

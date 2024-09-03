@@ -1,6 +1,7 @@
 .ea_page{
     display: flex;
     flex-direction: column;
+    padding-left: 30px;
 }
 .ea_header{
     font-family: 'Poppins';

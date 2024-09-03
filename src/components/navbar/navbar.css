@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content:space-between;
-    padding: 0px 0px 0px 50px;
+    padding: 0px 0px 0px 30px;
   }
 .addemp_nav_header{
         font-family: 'Poppins';
@@ -111,3 +111,10 @@
         }
     }
    
+    @media only screen and (max-width:637px){
+       
+        .search_bar button{
+            display: none;
+        }
+
+    }

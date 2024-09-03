@@ -18,6 +18,8 @@
     font-weight: 800;
     line-height: 18.75px;
     text-align: left;
+    width:195px;
+    height:19px;
 }
 .empfootend{
     display: flex;

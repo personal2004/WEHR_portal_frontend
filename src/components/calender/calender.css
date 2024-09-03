@@ -17,7 +17,7 @@
     margin-left: 2vw;
     display: flex;
     flex-direction: column;
-    gap: 5vh;   
+    gap: 13vh;   
 }
 
 @media only screen and (max-width:1204px){
