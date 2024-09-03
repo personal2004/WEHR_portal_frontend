@@ -19,8 +19,8 @@ const Eatable=({tablecon,height,width})=>{
             <div className='eatable_header'>
                    <h4>{tablecon[0].data.dataname}<span>{tablecon[0].data.count}</span></h4>
                     <div className='eatable_header_search'>
-                    <input type='text' placeholder='Type here…' onChange={(e)=>setsearchvalue(e.target.value)}/>
-                    <span>{icons.search}</span>
+                        <input type='text' placeholder='Type here…' onChange={(e)=>setsearchvalue(e.target.value)}/>
+                        <span>{icons.search}</span>
                     </div>
             </div> 
             <table>

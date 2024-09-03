@@ -58,3 +58,50 @@
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width:1234px){
+    .personalofemp_card{
+        width: 95vw;
+    }
+    .personalofemp_input input{
+      width: 320px;
+    }
+        @media(max-width:1123px){
+            .personalofemp_input input{
+                width: 269px;
+            }
+        }
+        @media(max-width:940px){
+            .personalofemp_input input{
+                width: 235px;
+            }
+        }
+        @media (max-width:845px){
+            .personalofemp_input input{
+              width: 197px;
+              font-size: small;
+            }
+        }
+        @media (max-width:710px) {
+            .personalofemp_input input{
+                width: 169px;
+              }
+        }
+        @media (max-width:613px) {
+            .personalofemp_input input{
+                width: 144px;
+              }
+        }
+        @media (max-width:526px) {
+            .personalofemp_input input{
+                width: 128px;
+              }
+        }
+        @media (max-width:479) {
+            .personalofemp_input input{
+                padding-left: 1px;
+            }
+        }
+
+}
+

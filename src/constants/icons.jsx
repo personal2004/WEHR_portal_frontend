@@ -15,7 +15,7 @@ import { PiEyeLight } from "react-icons/pi";
 import { IoMenu } from "react-icons/io5";
 
 const icons = {
-  menu:<IoMenu/>,
+  menu:<IoMenu style={{height:'55px',width:"40px"}}/>,
   dashboard: <RiDashboardHorizontalFill/>,
   attendance: <BsCalendar2EventFill/>,
   employee: <BsFillPersonPlusFill/>,

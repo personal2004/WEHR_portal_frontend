@@ -4,3 +4,6 @@
     flex-direction:column;
     gap: 3vh;
 }
+.leavepage_card{
+    background-color: aqua;
+}

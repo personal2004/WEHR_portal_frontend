@@ -4,6 +4,9 @@
    flex-direction: column;
    gap:7vh;
    background-color:#F6F6F6;
+   animation-name: slideIn;
+   animation-duration: 0.5s;
+   animation-timing-function: ease-in-out;
 }
 .sidebar h3{ 
     width: 242px; 
@@ -68,5 +71,14 @@
   }
 .menu-section h5 span,.content h5 span{
  font-size: 24px;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
 }
 

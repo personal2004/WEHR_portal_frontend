@@ -21,11 +21,7 @@
     width:195px;
     height:19px;
 }
-.empfootend{
-    display: flex;
-    width: 15vw;
-    justify-content: space-around;
-}
+
 .empfootend button{
     width:78px;
     height:39px;
@@ -33,10 +29,32 @@
     border-radius: 10px;
     border: 1px 0px 0px 0px;
 }
+.empfoot_button{
+    display: flex;
+    width: 15vw;
+    justify-content:space-around;
+    flex-direction: row;
+}
 .cancel_button{
   background-color: white;
 }
 .save_button{
     color: white;
     background-color: black;
+}
+
+@media (max-width:1234px){
+    .empfoot_card{
+        width: 95vw;
+    }
+    @media (max-width:1130px) {
+        .empfoot_button{
+            width: 25vw;
+        }
+    }  
+    @media (max-width:795px) {
+        .empfoot_button{
+            width: 35vw;
+        }
+    }  
 }

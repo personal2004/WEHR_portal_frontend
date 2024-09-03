@@ -87,7 +87,7 @@
 }
 @media only screen and (max-width:537px){
     .dashnoardcard{
-        width: 100vw;
+        width: 80vw;
         height: 110vh;
       }
     .cardreports{

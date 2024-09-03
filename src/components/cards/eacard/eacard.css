@@ -41,3 +41,27 @@
     color: red;
     cursor: pointer;
 }
+
+@media (max-width: 1417px) {    
+   .ea_page_cards{
+    width: 30vw;
+   }
+  }
+  @media (max-width: 1206px) {    
+    .ea_page_cards{
+     width: 30vw;
+    }
+   }
+   @media (max-width: 1165px) {    
+    .ea_page_cards{
+     width: 50vw;
+    }
+   }
+   @media (max-width: 660px) {    
+    .ea_page_cards{
+        flex-direction: column;
+        gap: 2vh;
+    }
+   }
+   
+  

@@ -4,7 +4,8 @@
     width: 52vw;
     height:15vh;
 }
-.colorcard{
+
+.colorcard,.leave_card{
     width: 16vw;
     font-weight: 500;
     font-size: 18px;
@@ -27,6 +28,36 @@
     text-align: right;
 }
 
+.leave_cards{
+    width:78vw;
+    height:20vh;
+    display:flex;
+    justify-content: space-between;
+}
+
+@media (min-width:822px){
+    .leave_cards{
+        width: 90vw;
+        justify-content: left;
+        gap: 1vw;
+    }
+    .leave_card{
+       width: fit-content;
+    }
+}
+
+@media (max-width:822px){
+ .leave_cards{
+    height: 100vw;
+    flex-direction: column;
+    gap: 0.2vh;
+ }
+ .leave_card{
+    width: 87vw;
+ }
+}
+/* I have not created responsive for width below 662px due to usage of table  */
+
 @media only screen and (max-width:1204px){
     .colorcards{
         width: 100vw;
@@ -37,6 +68,7 @@
     }
 }
 
+
 @media only screen and (max-width:537px){
     .colorcards{
       height: 60vh;
@@ -46,6 +78,5 @@
     .colorcard{
         width: 96vw;
         height: 18vh;
-    }
-    
+    }  
 }

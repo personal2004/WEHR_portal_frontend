@@ -5,10 +5,10 @@
 }
 .emplist_header{
     height:7vh;
-    width: 85vw;
+    width: 81vw;
     display: flex;
-    align-items: center;
-    gap:55vw ;
+    justify-content: space-between;
+    /* align-items: center; */
 }
 .emplist_header h3{
     width: fit-content;
@@ -51,4 +51,20 @@
     color: black;
     background-color: black;
     color: white;
+}
+
+@media (max-width:1030px){
+    .emplist_header{
+        width: 70vw;
+    }
+}
+@media (max-width:730px){
+    .emplist_header{
+        width: 60vw;
+    }
+}
+@media (max-width:585px) {
+    .emplist_header{
+        width: 40vw;
+    }
 }

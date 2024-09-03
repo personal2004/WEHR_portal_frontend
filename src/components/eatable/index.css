@@ -11,10 +11,11 @@
    /* margin-left: 1.5vw; */
 }
 .eatable_header{
-  width: 83vw;
+  width: 80vw;
   display: flex;
-  gap:60vw ;
+  justify-content: space-between;
 }
+
 .eatable_header h4{
   font-family: 'Inter';
   font-size: 17px;
@@ -110,4 +111,22 @@ border-radius: 0px 4px 4px 4px;
 }
 .threedot:hover + .leave_action {
   display: block;
+}
+
+@media (max-width:1060px){
+  .eatable_header input{
+    padding-left: 5vw;
+  }
+}
+
+@media (max-width:700px) {
+ 
+  table{
+    padding:0px;
+  }
+  .form-select{
+    width:10px;
+    font-size: 10px;
+  }
+   
 }
