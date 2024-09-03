@@ -12,8 +12,10 @@ import { FaPlus } from "react-icons/fa6";
 import { BiDotsHorizontalRounded } from "react-icons/bi";
 import { FaRegCheckCircle,FaTimesCircle } from "react-icons/fa";
 import { PiEyeLight } from "react-icons/pi";
+import { IoMenu } from "react-icons/io5";
 
 const icons = {
+  menu:<IoMenu/>,
   dashboard: <RiDashboardHorizontalFill/>,
   attendance: <BsCalendar2EventFill/>,
   employee: <BsFillPersonPlusFill/>,

@@ -1,6 +1,5 @@
 .sidebar{
    height: 100vh;
-   width: 13vw;
    display: flex;
    flex-direction: column;
    gap:7vh;
@@ -71,8 +70,3 @@
  font-size: 24px;
 }
 
-@media only screen and (max-width:1204px){
-    .sidebar{
-        display: none;
-    }
-}

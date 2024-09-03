@@ -3,9 +3,15 @@
 }
 
 .layout_sidebar {
-    flex-basis: 30%;
+    width: 13vw;
+    flex-basis: 20%;
+    z-index: 1;
 }
-
+.Menu_bar{
+    display: none;
+    font-size: 40px;
+    flex-basis: 20%;
+}
 .navbar_layout{
     flex-grow: 1;
     display: flex;
@@ -20,6 +26,15 @@
 
 @media  only screen and (max-width:1190px){
    .layout_navbar{
-    height: fit-content;
-   }
+    height: fit-content; 
+}
+}
+
+@media only screen and (max-width:1204px){
+    .layout_sidebar{
+        display: none;
+    }
+    .Menu_bar{
+        display: block;
+    }
 }
