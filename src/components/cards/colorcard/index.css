@@ -35,25 +35,26 @@
     justify-content: space-between;
 }
 
-@media (min-width:822px){
+
+@media (min-width:842px){
     .leave_cards{
         width: 90vw;
         justify-content: left;
         gap: 1vw;
     }
     .leave_card{
-       width: fit-content;
+       width:214px;
     }
 }
 
-@media (max-width:822px){
+@media (max-width:842px){
  .leave_cards{
-    height: 100vw;
+    height: 80vw;
     flex-direction: column;
-    gap: 0.2vh;
+    gap: 10px;
  }
  .leave_card{
-    width: 87vw;
+    width: 650px;
  }
 }
 /* I have not created responsive for width below 662px due to usage of table  */

@@ -13,6 +13,7 @@
     flex-basis: 20%;
 }
 .navbar_layout{
+    background-color: #FAFAFA;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
