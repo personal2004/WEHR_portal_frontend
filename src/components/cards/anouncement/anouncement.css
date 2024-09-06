@@ -1,65 +1,86 @@
 .anouncement_card{
     width: 52vw;
-    height: 40vh;
+    height: 36.5vh;
     border-radius: 10px 0px 0px 0px;
     box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
     border: 1px; 
     padding: 10px 25px; 
-    position: relative;
+    background-color: white;
 }
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     height:3vh;
-    margin-bottom: 1vh;
+    padding: 14px 5px 19px 5px; 
 }
 .header h3{
     font-size: 18px;
-    font-weight: 500;
+    font-weight:600;
     line-height: 28px;
 }
-.header span{
-    font-size: 25px;
+.anouncement_date{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    padding: 0px 8px;
+    background-color:#FAFAFA;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+}
+.anouncement_date h3{
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
     color: #686868;
+}
+.anouncement_date button{
+    width: max-content;
+    font-size: 22px;
+    color: #686868;
+    padding: 3px 0px 0px 5px;
+    background-color:#FAFAFA;
     cursor: pointer;
-    position: relative;
-    top: 0.6vh;
-    left:0.3vw;
+    border: none;
+    outline: none;    
 }
 .anoun_contents{
    display:flex;
    flex-direction: column;
-   gap:3vh;
-   height: 34vh;
+   gap:1.5vh;
+   height: 30vh;
    position: relative;
    overflow: hidden;
+   padding: 3px;
 }
 .anoun_scroll{
     display:flex;
     flex-direction: column;
-    gap:3vh;
-    height: 34vh;
+    gap:2vh;
+    height: 30vh;
     overflow-y: scroll;
     position: relative;
+    padding: 3px;
+
 }
 .anoun_content{
+    background-color: #FAFAFA;
+    padding: 8px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 9vh;
-    border-radius: 10px 0px 0px 0px;
+    border-radius: 6px;
     box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
-    border: 1px;
 }
 .anoun_schedule h3{
+    width: 35vw;
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 500;
-    line-height: 13px;
+    line-height:24px;
     text-align: left;
-    padding:8px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -69,29 +90,25 @@
     font-family: 'Roboto';
     font-size: 10px;
     font-weight: 400;
-    line-height:0px;
+    line-height:14px;
     text-align: left;
-    padding:5px;
-
 }
 .anoun_button{
    color: #B2B2B2;
-   background-color:white;
+   background-color:#FAFAFA;
    border:none;
    outline:none;
    cursor: pointer;
    height: fit-content;
    width: fit-content;
-   font-size: 30px;
+   font-size: 25px;
 }
 .anoun_none{
     display:none;
 }
 .anoun_more{
-    position:absolute;
-    bottom: 3vh;
-    width: 50vw;
-    height: 1vh;
+    width: 52vw;
+    height: fit-content;
     border: none;
     outline: none;
     background-color:white;
@@ -102,18 +119,29 @@
     font-weight: 500;
     line-height: 20px;
     text-align: center;
+    padding: 5px;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+
 }
 
 .anoun_scroll::-webkit-scrollbar {
     display: none;
 }
-@media only screen and (max-width:1204px){
-    .anouncement_card{
-        width: 97vw;
-        height: 40vh;
+@media(max-width:1238px){
+    .anouncement_card,.anoun_more{
+        width: 62vw;
     }
-    .anoun_more{
-        width: 100vw;
+}
+@media only screen and (max-width:1104px){
+    .anouncement_card,.anoun_more{
+        width: 95vw;
     }
-    
+    .anoun_schedule h3{
+        width: 65vw;
+    }
+}
+@media (max-width:600px) {
+    .anoun_schedule h3{
+        width: 65vw;
+    }
 }

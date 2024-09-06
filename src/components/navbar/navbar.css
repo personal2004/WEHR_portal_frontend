@@ -1,5 +1,4 @@
 .navbar {
-    width:87vw;
     height:8vh;
     display: flex;
     align-items: center;
@@ -40,6 +39,7 @@
     font-size: 26px;
     position:absolute;
     right: 1vw; 
+    top: 0.5vw;
     border: none;
     outline: none;
     cursor: pointer;
@@ -47,9 +47,9 @@
 
 .navbar_content{
     position: absolute;
-    top: 5%;
-    right:0%;
-    width: 364px;
+    top:1%;
+    right:1%;
+    width: max-content;
     display: flex;
     align-items: center;
     gap: 1vw;
@@ -61,7 +61,7 @@
 }
 .profile_picture{
     border-radius: 100%;
-    width: 3vw;
+    width: 35px;
     height: 6vh;
 }
 .navbar_content h3{
@@ -81,8 +81,20 @@
     top: 0.3vh;
     left:-1vw;
 }
-
-    @media only screen and (max-width:1204px){ 
+@media (max-width:1238px){
+    .navbar{
+        width:96vw;
+    }
+}
+@media (max-width:663px){
+  .search_bar,.search_icon{
+    display: none;
+  }
+  .navbar_content{
+    gap: 3vw;
+  }
+}
+    /* @media only screen and (max-width:1204px){ 
         .navbar {
             width:100vw;
             justify-content: space-between;
@@ -117,4 +129,4 @@
             display: none;
         }
 
-    }
+    } */

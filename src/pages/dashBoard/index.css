@@ -9,22 +9,19 @@
     gap:0.1vh;   
 }
 
-@media only screen and (max-width:1204px){
+@media only screen and (max-width:1104px){
     .dash_page{
-        margin: 0% 1vw;
+        margin: 0%;
         flex-direction: column;
     }
     .cardanouncement,.calenderactivity{
         margin-left: 0%;
     }
-    .cardanouncement{
-        gap: 5vh;
-    }
 }
 
-@media only screen and (max-width:537px){
+@media only screen and (max-width:600px){
     .cardanouncement{
-        gap:6vh;
+        gap:1vh;
     }
     .calenderactivity{
         gap: 0;

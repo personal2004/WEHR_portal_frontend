@@ -17,6 +17,7 @@
     align-items: center;
     gap:2vw;
     overflow-x:scroll;
+    padding: 2px;
 }
 .birthday_card{
     width: 13vw;
@@ -62,7 +63,7 @@
 .birthday_cards::-webkit-scrollbar {
     display: none;
 }
-@media only screen and (max-width:1204px){
+@media only screen and (max-width:1104px){
     .birthdayCards{
         width: 97vw;
     }

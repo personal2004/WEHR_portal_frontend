@@ -1,22 +1,19 @@
 .layout{
     display: flex;
 }
-
 .layout_sidebar {
     width: 13vw;
-    flex-basis: 20%;
-    z-index: 1;
+    flex-basis: 4%;
+    top:0%;
+    left: 0%;
 }
-.Menu_bar{
+.screenview{
+    width: 13vw;
+    flex-basis: 4%;
+    display: block;
+}
+.displayMenu_bar,.notdisplay{
     display: none;
-    font-size: 40px;
-    flex-basis: 20%;
-}
-.navbar_layout{
-    background-color: #FAFAFA;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
 }
 .layout_navbar {
     height: 10%;
@@ -25,7 +22,45 @@
     height: 90%; 
 }
 
-@media  only screen and (max-width:1190px){
+.navbar_layout{
+    flex-grow: 1;
+    width: 87vw;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:1238px){
+    .layout_navbar {
+        width: 95vw;
+        height: 10%;
+    }
+    .layout_sidebar {
+        width: max-content;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 13vw;
+        z-index:2;
+    }
+    .screenview{
+        display: none;
+    }  
+    .displayMenu_bar{
+        width: max-content;
+        font-size: 40px;
+        display: block;
+    }
+    .notdisplay{
+        display: block;
+    }
+}
+@media only screen and (max-width:1104px){
+    .layout_navbar{
+        height: max-content;
+    }
+}
+/* @media  only screen and (max-width:1190px){
    .layout_navbar{
     height: fit-content; 
 }
@@ -38,4 +73,4 @@
     .Menu_bar{
         display: block;
     }
-}
+} */

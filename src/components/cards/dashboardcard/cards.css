@@ -17,7 +17,7 @@
     justify-content: space-between;
     margin-top: 2vh;
     width:52vw;
-    height:20vh;
+    height:22vh;
 }
 .cardreport{
     width:25vw;
@@ -60,17 +60,24 @@
     
 }
 
-@media screen and (max-width:1246px) {
+@media (max-width:1238px){
+    .dashnoardcard{
+        width: 62vw;
+    }
+    .cardreports{
+        width:62vw;
+    }
     .cardreport{
-        height: fit-content;
+        width:30vw;
     }
 }
-@media only screen and (max-width:1204px){
+ 
+@media only screen and (max-width:1104px){
    .dashnoardcard{
-     width: 100vw;
+     width: 98vw;
    }
    .cardreports{
-        width: 100vw;
+        width: 98vw;
     }
     .cardreport{
         width: 48vw;
@@ -85,14 +92,20 @@
         width: 22vw;
     }
 }
-@media only screen and (max-width:537px){
+
+
+@media only screen and (max-width:600px){
     .dashnoardcard{
-        width: 80vw;
-        height: 110vh;
+        width: 98vw;
+        height: 100vh;
+      }
+      .dashnoardcard h3{
+        margin-bottom: 9px;
       }
     .cardreports{
       flex-direction: column;
       gap:2vh;
+
     }
     .cardreport{
         width: 96vw;

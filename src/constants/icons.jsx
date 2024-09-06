@@ -4,15 +4,14 @@ import { HiMiniUserGroup } from "react-icons/hi2";
 import { VscTasklist } from "react-icons/vsc";
 import { CiShare2,CiSearch, CiLock , CiCircleMinus,CiCirclePlus} from "react-icons/ci";
 import { PiHeadsetFill,PiBuildingApartmentThin } from "react-icons/pi";
-import { IoSettingsSharp,IoBagHandleOutline,IoCloseOutline,IoCheckmarkOutline } from "react-icons/io5";
+import { IoSettingsSharp,IoBagHandleOutline,IoCloseOutline,IoCheckmarkOutline,IoMenu } from "react-icons/io5";
+import { IoIosArrowDown } from "react-icons/io";
 import { VscBellDot } from "react-icons/vsc";
-import { FiArrowDown } from "react-icons/fi";
 import { GoPersonAdd,GoDot } from "react-icons/go";
 import { FaPlus } from "react-icons/fa6";
 import { BiDotsHorizontalRounded } from "react-icons/bi";
 import { FaRegCheckCircle,FaTimesCircle } from "react-icons/fa";
 import { PiEyeLight } from "react-icons/pi";
-import { IoMenu } from "react-icons/io5";
 
 const icons = {
   menu:<IoMenu style={{height:'55px',width:"40px"}}/>,
@@ -27,7 +26,7 @@ const icons = {
   message:<RiMessage2Fill/>,
   search:< CiSearch/>,
   notification:<VscBellDot/>,
-  downarrow:<FiArrowDown/>,
+  downarrow:<IoIosArrowDown/>,
   companyId:<IoBagHandleOutline/>,
   password:<CiLock/>,
   personadd:<GoPersonAdd/>,

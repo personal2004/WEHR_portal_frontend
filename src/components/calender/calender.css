@@ -20,7 +20,7 @@
     gap: 13vh;   
 }
 
-@media only screen and (max-width:1204px){
+ @media only screen and (max-width:1104px){
  .calender{
     width: 97vw;
     margin-top: 2vh;
@@ -29,7 +29,7 @@
     margin-left: 0%;
 }
 }
-
+/*
 @media only screen and (max-width:537px){
     .calender{
         height:50vh;
@@ -37,4 +37,4 @@
     .calenderactivity{
         gap:0px;
     }
-}
+} */

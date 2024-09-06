@@ -35,33 +35,22 @@
     justify-content: space-between;
 }
 
-
-@media (min-width:842px){
-    .leave_cards{
-        width: 90vw;
-        justify-content: left;
-        gap: 1vw;
-    }
-    .leave_card{
-       width:214px;
-    }
-}
-
-@media (max-width:842px){
- .leave_cards{
-    height: 80vw;
-    flex-direction: column;
-    gap: 10px;
- }
- .leave_card{
-    width: 650px;
- }
-}
-/* I have not created responsive for width below 662px due to usage of table  */
-
-@media only screen and (max-width:1204px){
+@media(max-width:1238px){
     .colorcards{
-        width: 100vw;
+        width: 62vw;
+        height:15vh;
+    }
+    
+    .colorcard,.leave_card{
+        width: 20vw; 
+    }
+}
+
+
+
+@media only screen and (max-width:1104px){
+    .colorcards{
+        width: 98vw;
     }
     .colorcard{
      width: 32vw;
@@ -69,10 +58,9 @@
     }
 }
 
-
-@media only screen and (max-width:537px){
+@media only screen and (max-width:600px){
     .colorcards{
-      height: 60vh;
+      height: 44vh;
       flex-direction: column;
       gap:2vh;
     }

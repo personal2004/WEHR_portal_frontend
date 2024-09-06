@@ -13,10 +13,14 @@ const Anouncement=()=>{
     });
       let anouncount;
  return(
+   <>
     <div className='anouncement_card'>
       <div className='header'>
       <h3>Announcement</h3>
-       <p>{formattedDate}<span>{icons.downarrow}</span></p>
+      <div className='anouncement_date'>
+         <h3>Today, {formattedDate}</h3>
+         <button>{icons.downarrow}</button>
+      </div>
       </div>
       <div className={scroll===true?'anoun_contents':'anoun_scroll'}>
          {announcementdata.map((data,index)=>{
@@ -27,16 +31,17 @@ const Anouncement=()=>{
                      <h3>{data.topic}</h3>
                      <p>{data.time}</p>
                      </div>
-                     <button className='anoun_button'>...</button>
+                     <button className='anoun_button'>{icons.threedot}</button>
                </div>
             );
          })}
-            {anouncount>=3 &&
-            <button onClick={()=>setscroll(false)} className={scroll===true? 'anoun_more' : 'anoun_none'}>
-               See All Announcements</button> 
-            }
       </div>
     </div>
+   {anouncount>=3 &&
+   <button onClick={()=>setscroll(false)} className={scroll===true? 'anoun_more' : 'anoun_none'}>
+      See All Announcements</button> 
+   }
+   </>
  );
 }
 
