@@ -7,8 +7,6 @@
 
 .colorcard,.leave_card{
     width: 16vw;
-    font-weight: 500;
-    font-size: 18px;
     padding: 12px 12px 12px 20px;
     border-radius: 10px;
     text-align:left;
@@ -19,7 +17,13 @@
     white-space: nowrap; 
     text-overflow: ellipsis;  
 }
-.colorcard p{
+.colorcard h4,.leave_card h4{
+    font-family: 'Poppins';
+    font-size: 18px;
+    line-height: 37px;
+    font-weight: 600;
+}
+.colorcard p,.leave_card p{
     height: 24px;
     font-family: 'Roboto';
     font-size: 15px;
@@ -27,7 +31,6 @@
     line-height: 24px;
     text-align: right;
 }
-
 .leave_cards{
     width:69vw;
     height:20vh;

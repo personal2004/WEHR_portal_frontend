@@ -6,12 +6,11 @@
     height:7vh;
     padding: 10px 10px 10px 0px;
     font-family:'Poppins';
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
-    line-height: 42px;
+    line-height: 28px;
     text-align: left;
 }
-
 .cardreports{
     display: flex;
     justify-content: space-between;
@@ -41,10 +40,13 @@
     font-size: 18px;
 }
 .subject{
+    font-family: 'Poppins';
     font-size: 18px;
+    line-height: 31px;
+    font-weight: 600;
 }
 .count{
-   font-size: 48px;
+   font-size: 45px;
 }
 .report_img{
     align-self: center;

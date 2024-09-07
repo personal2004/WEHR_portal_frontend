@@ -7,7 +7,7 @@ const LeaveRequest=()=>{
     return(
         <div className='leaverequest_page'>
             <Colorcard  cardcontent={leavecard}  cards='leave_cards' card='leave_card'/>
-            <Eatable tablecon={leaverequesttable} height='61vh'width='81vw'/>
+            <Eatable tablecon={leaverequesttable} tableclass='leave_card_table_outlet'/>
         </div>
     );
 }

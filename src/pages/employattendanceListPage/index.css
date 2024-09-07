@@ -5,36 +5,35 @@
 }
 .emplist_header{
     height:7vh;
-    width: 81vw;
+    width: 86vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
 }
-.emplist_header h3{
-    width: fit-content;
-    padding: 10px 10px 10px 0px;
+.list_title h3{
+    text-align: left;
+    width: 150px;
+    line-height: 42px;
     font-family: 'Poppins';
     font-size: 24px;
     font-weight: 600;
-    text-align: center; 
 }
 .emplist_header_button{
     width:20vw;
-    display: flex;
-    gap: 1vw;
+    height:40px;
+    display:flex;
+    gap: 10px;
 }
 .emplist_header span{
   font-size: larger;
 }
 .import_excel_button,.add_employee{
     width:143px;
-    height:40px;
-    top: 95px;
-    left: 1041px;
     padding: 8px 12px 8px 12px;
     gap: 12px;
     border-radius: 10px;
     border: 1px 0px 0px 0px;
-    opacity: 0px;   
     font-family: 'Inter';
     font-size: 14px;
     font-weight: 600;
@@ -52,18 +51,39 @@
     color: white;
 }
 
-@media (max-width:1030px){
+@media (max-width:1493px) {
     .emplist_header{
-        width: 70vw;
+        width: 81vw;
     }
 }
-@media (max-width:730px){
-    .emplist_header{
-        width: 60vw;
+
+@media (max-width: 1232px) {
+    .emplist_header {
+        width: 90vw;
     }
 }
-@media (max-width:585px) {
-    .emplist_header{
-        width: 40vw;
+@media (max-width: 1212px) {
+    .emplist_header {
+        margin-top: 13px;
+        width: 89vw;
     }
+}
+@media (max-width: 912px) {
+    .emplist_header {
+     width: 93vw;
+     height: 15vh;
+    }
+    .emplist_header_button{
+        width:20vw;
+        height:100px;
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width:890px) {
+    .employeListPage{
+       width: max-content;
+    }   
 }

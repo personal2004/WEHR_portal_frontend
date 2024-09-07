@@ -7,7 +7,7 @@ const EmployeAttenList=({title,tablecon})=>{
     return( 
         <div className='employeListPage'>
             <div className='emplist_header'>
-                <h3>{title}</h3>
+                <div className='list_title'><h3>{title}</h3></div>
                 <div className='emplist_header_button'>
                     <button className='import_excel_button'><span>{icons.plus}</span> Import Excel</button>
                     <button className='add_employee' onClick={(e)=>navigate('addemployee')}><span>{icons.plus}</span> Add Employee</button>
