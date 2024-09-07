@@ -14,7 +14,8 @@ const DashboardCard=()=>{
                   <div className='card_item'>
                     <h4 className='subject'>{data.subject}</h4>
                     <h4 className='count'>{data.count}</h4>
-                    <p>{data.men}<br></br>&nbsp;&nbsp;&nbsp;&nbsp;{data.women}</p>
+                    <p>{data.men}</p>
+                    <p>{data.women}</p>
                   </div>
                   <img className='report_img'src={data.reportimg} alt='report_img'/>
                 </div>

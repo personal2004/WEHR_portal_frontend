@@ -92,8 +92,26 @@
   }
   .navbar_content{
     gap: 3vw;
+    right: -4%;
+    width: max-content;
+  }
+  .navbar{
+    width: 96vw;
   }
 }
+
+@media (max-width:590px){
+    .leave_nav_header{
+      display: none;
+    }
+   
+}
+@media (max-width:490px){
+    .navbar_content{
+        right: -4%;
+    }
+}
+
     /* @media only screen and (max-width:1204px){ 
         .navbar {
             width:100vw;

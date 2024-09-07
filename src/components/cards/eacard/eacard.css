@@ -6,15 +6,18 @@
 .ea_header{
     font-family: 'Poppins';
     font-size: 24px;
+    letter-spacing: 0.5px;
     font-weight: 600;
     line-height: 42px;
     text-align: left;
+    margin-left: 2vw;
 }
 .ea_page_cards{
-    width: 24vw;
+    width: 23vw;
     display: flex;
-    margin:2rem 1rem;
-    justify-content: space-around;
+    margin:2rem 0rem;
+    margin-left: 2vw;
+    gap: 2vw;
 }
 .ea_page_card{
     background-color: #FFFFFF;
@@ -43,26 +46,26 @@
     cursor: pointer;
 }
 
-@media (max-width: 1417px) {    
+@media (max-width: 1567px) {    
    .ea_page_cards{
-    width: 30vw;
+    width: 35vw;
    }
   }
-  @media (max-width: 1206px) {    
+ 
+@media (max-width: 1240px) {    
     .ea_page_cards{
-     width: 30vw;
+     width: 40vw;
     }
    }
-   @media (max-width: 1165px) {    
+@media (max-width: 869px) {    
     .ea_page_cards{
-     width: 50vw;
+     width: 70vw;
     }
    }
-   @media (max-width: 660px) {    
+   @media (max-width: 472px) {    
     .ea_page_cards{
         flex-direction: column;
         gap: 2vh;
     }
    }
-   
   

@@ -37,8 +37,7 @@ useEffect(()=>{
           <div className='notification'>{icons.notification}</div>
           <div className='message'>{icons.message}</div>
           <img src={profilepic} alt='profile_picture' className='profile_picture'/>
-          <h3>Admirra John</h3>
-          {/* <h3  onMouseOver={handlestatus} data-toggle="tooltip" title={`User is ${onlinestatus}`} data-placement="bottom">Admirra John</h3>  */}
+          <h3  onMouseOver={handlestatus} data-toggle="tooltip" title={`User is ${onlinestatus}`} data-placement="bottom">Admirra John</h3> 
           <span>{icons.downarrow}</span>       
         </div>
     </nav>

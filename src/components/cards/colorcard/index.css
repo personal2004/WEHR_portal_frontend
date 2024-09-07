@@ -29,12 +29,17 @@
 }
 
 .leave_cards{
-    width:78vw;
+    width:69vw;
     height:20vh;
     display:flex;
     justify-content: space-between;
 }
 
+@media (max-width:1246px){
+    .leave_cards{
+        width: 90vw;
+    }
+}
 @media(max-width:1238px){
     .colorcards{
         width: 62vw;
@@ -57,8 +62,23 @@
      margin-right: 3vw;
     }
 }
+@media (max-width:990px){
+    .leave_cards{
+        height: max-content;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap:8px;
+    }
+    .leave_card{
+        width:43vw;
+        height: max-content;
+
+    }
+}
 
 @media only screen and (max-width:600px){
+  
     .colorcards{
       height: 44vh;
       flex-direction: column;
@@ -68,4 +88,15 @@
         width: 96vw;
         height: 18vh;
     }  
+}
+
+@media (max-width:590px){
+    .leave_cards{
+        padding-left: 0%;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+   } 
+   .leave_card{
+    width: 96vw;
+   }
 }

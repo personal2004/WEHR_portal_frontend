@@ -3,13 +3,13 @@
 }
 .layout_sidebar {
     width: 13vw;
-    flex-basis: 4%;
+    flex-basis: 12%;
     top:0%;
     left: 0%;
 }
 .screenview{
     width: 13vw;
-    flex-basis: 4%;
+    flex-basis: 12%;
     display: block;
 }
 .displayMenu_bar,.notdisplay{
@@ -24,7 +24,7 @@
 
 .navbar_layout{
     flex-grow: 1;
-    width: 87vw;
+    width: 99vw;
     background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
@@ -32,8 +32,8 @@
 
 @media (max-width:1238px){
     .layout_navbar {
-        width: 95vw;
-        height: 10%;
+        width: 97vw;
+        height: 20%;
     }
     .layout_sidebar {
         width: max-content;
