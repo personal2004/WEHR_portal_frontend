@@ -13,10 +13,10 @@ const EmpDetailCard=({empsdetail,header})=>{
     return(
         <div className='detailofemp_card'>
         <div className='detailofemp_card_header'>
-            {header==='basicinfo' && <h3>Add details of an employee</h3>}            
-            {header==='basicinfo' && <span>{icons.circleminus}</span>}
-            {header==='personalinfo' && <h3>Personal Details</h3>}
-            {header==='personalinfo' && <span>{icons.circleplus}</span>}
+            {header==='basicinfo' && <h3 className='dhone'>Add details of an employee</h3>}            
+            {header==='basicinfo' && <div className='dhtwo'>{icons.circleminus}</div>}
+            {header==='personalinfo' && <h3 className='dhone'>Personal Details</h3>}
+            {header==='personalinfo' && <div className='dhtwo'>{icons.circleplus}</div>}
         </div>
         <div className='detailofemp_input'>
             <Formik initialValues={empValues} >

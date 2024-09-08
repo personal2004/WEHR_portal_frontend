@@ -37,12 +37,13 @@ const SignInCard=()=>{
             <h1>Sign Into</h1>
             <h3>Your Account</h3>
             <div className='signin_input'>
+                <button>{icons.companyId}</button>
                 <input type='email' placeholder='Company ID'onChange={(e)=>setemploeid(e.target.value)}/>
-                <span>{icons.companyId}</span>
+               
             </div>
             <div className='signin_input'>
+                <button>{icons.password}</button>
                 <input type='password' placeholder='Password'onChange={(e)=>setpassword(e.target.value)}/>
-                <span>{icons.password}</span>
             </div>
             <div className='signcheckbox'>
                 <input type='checkbox' writingsuggestions="on"onChange={(e)=>setischecked(e.target.checked)}/><span>Remember Me</span></div>  

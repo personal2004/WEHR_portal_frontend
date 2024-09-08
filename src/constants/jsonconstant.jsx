@@ -18,7 +18,7 @@ const announcementdata=[{topic:'Outing schedule for every departement',time:'5 M
     {topic:'IT Department need two more talents for UX/UI Designer position',time:'Yesterday, 09:15 AM'},
     {topic:'IT Department need two more talents for UX/UI Designer position',time:'Yesterday, 09:15 AM'},
 
-]
+] 
    
 const birthdata=[{img:birthdayboy,name:'Robert Whistable',position:'Product manager',date:'15 feb 1998'},
     {img:roundblankphoto,name:'Robert Whistable',position:'Product manager',date:'22 August 2024'},

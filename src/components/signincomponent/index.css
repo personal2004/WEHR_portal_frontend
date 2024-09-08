@@ -47,11 +47,20 @@
     text-align: left;
 }
 .signin_input{
+    background-color: white;
     display: flex;
-    position: relative;
+    align-items: center;
+}
+.signin_input button{
+    font-size: 20px;
+    padding-left: 10px;
+    background-color: white;
+    background-color: white;
+    border: none;
+    height: max-content;
+    outline: none;
 }
 .signin_input input{
-    position: relative;
     border: none;
     outline: none;
     background-color:white;
@@ -59,13 +68,6 @@
     height: 3vh;
     border-radius: 5px 0px 0px 0px;
     padding: 6%;
-    padding-left: 2.3vw;
-}
-.signin_input span{
-    position: absolute;
-    font-size: 20px;
-    bottom:1.2vh;
-    left: 0.5vw;
 }
 .signinbutton{
     border: none;
@@ -86,19 +88,38 @@
         justify-content: center;
         padding: 0%;
     }
-    .signin_input span{
-        font-size: large;
-    }
-}
-
-@media screen and (max-width:994px){
+    .signin_input button{
+        font-size: 20px;
+    }  
     .signInCard{
         width:100vw ;
+        height: 100vh;
+        flex-direction: row;
+    }
+    .signin_input input{
+        height: 50px;
     }
     .signinform{
-        width: fit-content;
+        width: 60vw;
+        height: 74vh;
     }
-   .signin_input span{
-    font-size: small;
+}
+@media screen and (max-width:773px){
+    .signInCard{
+        width:100vw ;
+        flex-direction: column;
+    }
+    .signinform{
+        width: 60vw;
+        gap: 10px;
+    }
+    .signin_input input{
+        height: 30px;
+    }
+    .signinform{
+        height: 64vh;
+    }
+   .signin_input button{
+     font-size: larger;
     }
 }
