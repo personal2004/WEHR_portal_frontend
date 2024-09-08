@@ -5,6 +5,7 @@ import { useLocation } from 'react-router-dom';
 const Eatable=({tablecon,tableclass='eatable_component'})=>{
 
     const [searchvalue,setsearchvalue]=useState('');
+    const [showoption,setshowoption]=useState(true);
     const location=useLocation();
     const filteredEmployees = searchvalue ?tablecon.filter(data =>
             data.name.name.toLowerCase().includes(searchvalue.toLowerCase()) ||
@@ -60,9 +61,9 @@ const Eatable=({tablecon,tableclass='eatable_component'})=>{
                                     {isleaverequestpage && <td style={isleaverequestpage?{color:'#4F5E74'}:{display:'none'}}>{data.Reason}</td>}
                                     {isleaverequestpage && <td style={isleaverequestpage?{color:'#4F5E74'}:{display:'none'}}>{data.days}</td>}
                                         <td>{data.status}</td>
-                                        <td >
+                                        <td style={{position:'relative'}}>
                                             <div class='threedot'>{icons.threedot}</div>
-                                            <div className='leave_action'>
+                                            <div className={showoption?'leave_action':'leave_action_disapper'} onClick={(e)=>(setshowoption(!showoption))}>
                                                 <h5>{icons.correct} Approve Leave</h5> 
                                                 <h5>{icons.wrong} Reject Leave</h5>
                                                 <h5>{icons.eye} View Details</h5>

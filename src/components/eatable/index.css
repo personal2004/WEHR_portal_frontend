@@ -47,6 +47,7 @@
  display: flex;
  align-items: center;
  border-radius: 8px;
+ background-color: white;
 }
 .search-button{
   background-color: white;
@@ -143,7 +144,21 @@ option{
   flex-direction: column;
   gap: 8px;
   border: 1px solid #C4C4C4; 
+  background-color: white;
+  right: 50px;
   display: none;   
+}
+.leave_action_disapper{
+  position:absolute;
+  width: 158px;
+  height: 19vh;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid #C4C4C4; 
+  background-color: white;
+  right: 50px;
 }
 .leave_action h5{
 color: black;
@@ -155,6 +170,7 @@ letter-spacing: -0.15399999916553497px;
 text-align: left;
 border-radius: 0px 4px 4px 4px;
 }
+
 .threedot:hover + .leave_action {
   display: block;
 }
@@ -187,28 +203,20 @@ border-radius: 0px 4px 4px 4px;
 } 
 }
 @media (max-width:1027px) {
-    .eatable_header_search{
-     display: none;
+  .eatable_header{
+     flex-direction: column;
   }
+    .eatable_header_search {
+        margin: 20px 0px;
+        width: max-content;
+    }
 }
 @media (max-width:920px) {
   .leave_card_table_outlet{
      width: 90vw;
   }  
 }
-@media (max-width: 912px) {
-  .emplist_header {
-   width: 93vw;
-   height: 15vh;
-  }
-  .emplist_header_button{
-      width:20vw;
-      height:100px;
-      display:flex;
-      flex-direction: column;
-      gap: 10px;
-  }
-}
+
 @media (max-width:589px) {
   .leave_card_table_outlet{
      width: 96vw;
