@@ -101,7 +101,7 @@
 }
 
 @media (max-width:590px){
-    .leave_nav_header{
+    .leave_nav_header,.addemp_nav_header{
       display: none;
     }
    

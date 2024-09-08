@@ -3,6 +3,7 @@
     height: 32vh;
     box-shadow: 0px 0px 0.9px 0px rgba(0,0,0,0.75);
     border-radius: 13px;
+    margin-left: 10px;
 }
 .detailofemp_card_header{
     display: flex;
@@ -59,50 +60,38 @@
     flex-direction: column;
 }
 
-@media (max-width:1234px){
+@media (max-width:1242px){
     .detailofemp_card{
-        width: 95vw;
+        width: 94vw;
+        height: 32vh;
+        box-shadow: 0px 0px 0.9px 0px rgba(0,0,0,0.75);
+        border-radius: 13px;
+        margin-left: 10px;
+    }
+    .detailofemp_input{
+        width:100%;
     }
     .detailofemp_input input{
-        width: 309px;
+        width: 300px;
     }
-
-    @media(max-width:1123px){
-        .detailofemp_input input{
-            width: 255px;
-        }
+}
+@media(max-width:1094px){
+    .detailofemp_card{
+        height: max-content;
+        padding: 10px;
     }
-    @media(max-width:940px){
-        .detailofemp_input input{
-            width: 229px;
-        }
+    .detailofemp_input{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
     }
-    @media (max-width:845px){
-        .detailofemp_input input{
-          width: 190px;
-          font-size: small;
-        }
+}
+@media(max-width:744px){
+    .detailofemp_input{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
     }
-    @media (max-width:710px) {
-        .detailofemp_input input{
-            width: 160px;
-          }
+    .detailofemp_input input{
+        width: 90%;
     }
-    @media (max-width:613px) {
-        .detailofemp_input input{
-            width: 140px;
-          }
-    }
-    @media (max-width:526px) {
-        .detailofemp_input input{
-            width: 120px;
-          }
-    }
-    @media (max-width:453) {
-        .detailofemp_input input{
-            padding-left: 1px;
-        }
-    }
-    
 }
 

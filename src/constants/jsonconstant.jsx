@@ -64,6 +64,22 @@ const leaverequesttable=[{header:{col1:'Name',col2:'Reuest Date ',col3:'Leave ty
     {name:{name:'Match.com',email:' CODE@Dotcod.in'},date:'21/2/23',designation:'Sick Leave',Reason:'Not Well....',days:'04',status:<img style={{width:'79px',height:'30px'}} src={approve} alt='Approve'/>},
     {name:{name:'Chevy ',email:'@Dotcod.in'},date:'11/7/23',designation:'Casual Leave',Reason:'Marriage Function',days:'01',status:<img style={{width:'79px',height:'30px'}} src={pending} alt='Pending'/>}]
 
+const empsdetail = [
+        {label: `Employee Name`,name: 'name',placeholder:'Enter Employee Name',type:'text'},
+        {label:`Employee Number`,name: 'emid',placeholder:'Enter Employee Number',type:'text'},
+        {label: `Date of joining `,name: 'joindate',placeholder:'Enter Joining date',type:'date'},
+        {label: `Email Id `,name: 'email',placeholder:'Enter Email id',type:'text'},
+        {label: `Mobile Number`,name: 'phnumber',placeholder:'Enter Mobile Number',type:'text'},
+        {label: `Employee Status`,name: 'status',placeholder:'Employee Status',type:'text'},
+    ];
+const empspersonaldetail = [
+        {label: `Date Of Birth`,name: 'name',placeholder:'Enter Date Of Birth',type:'date'},
+        {label:`Gender`,name: 'emid',placeholder:'Gender',type:'text'},
+        {label: `Marital Status `,name: 'joindate',placeholder:'Marital Status',type:'text'},
+        {label: `Is Physical Challanged `,name: 'email',placeholder:'Yes',type:'text'},
+        {label: `Blood Group`,name: 'phnumber',placeholder:' ',type:'text'},
+        {label: `Personal Email id`,name: 'status',placeholder:'Enter Email id',type:'email'},
+    ];
 export{
     dashboardcard,
     dashboardreport,
@@ -74,5 +90,7 @@ export{
     employeetable,
     attendancetable,
     leavecard,
-    leaverequesttable  
+    leaverequesttable,
+    empsdetail,
+    empspersonaldetail  
 }
