@@ -83,7 +83,7 @@
 @media only screen and (max-width:600px){
   
     .colorcards{
-      height: 44vh;
+      height: 49vh;
       flex-direction: column;
       gap:2vh;
     }
@@ -101,5 +101,8 @@
    } 
    .leave_card{
     width: 96vw;
+   }
+   .colorcard{
+    padding-bottom: 5rem;
    }
 }

@@ -1,6 +1,6 @@
 .birthdayCards{
  width:30vw;
- height:29vh;
+ height:28vh;
 }
 .birthdayCards_header{
     width: 100%;
@@ -24,7 +24,7 @@
     width: 13vw;
     height: 22vh;
     padding:10px;
-    border-radius: 12px 0px 0px 0px;
+    border-radius: 12px;
     box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
     border: 0.5px;
     display: flex;
@@ -61,6 +61,11 @@
     line-height: 18px;
     text-align: center;
 }
+.birthday_card img {
+    width: 59px;
+    height: 63px;
+    border-radius: 100%;
+}
 .birthday_cards::-webkit-scrollbar {
     display: none;
 }
@@ -74,4 +79,5 @@
     .birthday_card h3{
       width: 45vw;
     }
+
 }

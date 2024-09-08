@@ -13,6 +13,7 @@
     .dash_page{
         margin: 0%;
         flex-direction: column;
+        gap: 1rem;
     }
     .cardanouncement,.calenderactivity{
         margin-left: 0%;
@@ -21,9 +22,9 @@
 
 @media only screen and (max-width:600px){
     .cardanouncement{
-        gap:1vh;
+        gap:5vh;
     }
     .calenderactivity{
-        gap: 0;
+        gap: 5vh;
     }
 }

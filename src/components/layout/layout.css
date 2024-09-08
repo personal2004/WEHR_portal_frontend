@@ -1,5 +1,6 @@
 .layout{
     display: flex;
+    background-color:#FAFAFA;
 }
 .layout_sidebar {
     width: 13vw;
@@ -47,9 +48,11 @@
         display: none;
     }  
     .displayMenu_bar{
+        background-color:#FAFAFA;
         width: max-content;
         font-size: 40px;
         display: block;
+        height: auto;
     }
     .notdisplay{
         display: block;
@@ -60,17 +63,4 @@
         height: max-content;
     }
 }
-/* @media  only screen and (max-width:1190px){
-   .layout_navbar{
-    height: fit-content; 
-}
-}
 
-@media only screen and (max-width:1204px){
-    .layout_sidebar{
-        display: none;
-    }
-    .Menu_bar{
-        display: block;
-    }
-} */

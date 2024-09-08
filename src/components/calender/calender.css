@@ -1,8 +1,7 @@
 .calender{
     width: 30vw;
-    height: 44vh;
+    height: 47vh;
 }
-
 .calender h3{
     height:7vh;
     padding: 10px 10px 10px 0px;
@@ -29,12 +28,9 @@
     margin-left: 0%;
 }
 }
-/*
+
 @media only screen and (max-width:537px){
     .calender{
         height:50vh;
     }
-    .calenderactivity{
-        gap:0px;
-    }
-} */
+}

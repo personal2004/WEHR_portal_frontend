@@ -13,8 +13,8 @@ const Anouncement=()=>{
     });
       let anouncount;
  return(
-   <>
-    <div className='anouncement_card'>
+   <div className='anouncement_card'>
+    <div>
       <div className='header'>
       <h3>Announcement</h3>
       <div className='anouncement_date'>
@@ -41,7 +41,7 @@ const Anouncement=()=>{
    <button onClick={()=>setscroll(false)} className={scroll===true? 'anoun_more' : 'anoun_none'}>
       See All Announcements</button> 
    }
-   </>
+   </div>
  );
 }
 
