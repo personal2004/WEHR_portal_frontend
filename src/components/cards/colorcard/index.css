@@ -88,7 +88,7 @@
       gap:2vh;
     }
     .colorcard{
-        width: 96vw;
+        width: 90vw;
         height: 18vh;
     }  
 }
@@ -100,7 +100,7 @@
         grid-template-rows: auto auto auto auto;
    } 
    .leave_card{
-    width: 96vw;
+    width: 86vw;
    }
    .colorcard{
     padding-bottom: 5rem;

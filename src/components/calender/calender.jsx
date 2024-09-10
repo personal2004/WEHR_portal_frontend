@@ -32,7 +32,7 @@ const CalenderComponent=()=>{
         <div className='calenderactivity'>
         <div className='calender'>
             <h3>Calender</h3>
-            <div style={{display:'flex',justifyContent:'space-around'}} >
+            <div className='custom-style' >
             <Calendar  onChange={handleDateChange} value={selectedDate} />
             </div>
         </div>

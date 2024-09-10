@@ -137,10 +137,15 @@ button.anoun_more {
 }
 @media only screen and (max-width:1104px){
     .anouncement_card,.anoun_more{
-        width: 95vw;
+        width: 89vw;
     }
-    .anoun_schedule h3{
-        width: 65vw;
+
+    .anouncement_date h3{
+        font-family: 'Roboto';
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 32px;
+        text-align: left;
     }
 }
 @media (max-width:600px) {

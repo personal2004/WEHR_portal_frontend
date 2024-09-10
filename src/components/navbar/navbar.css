@@ -2,7 +2,7 @@
     height:8vh;
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content:flex-end;
     padding: 0px 0px 0px 30px;
   }
 .addemp_nav_header{
@@ -21,34 +21,35 @@
     font-weight: 600;
     text-align: left;
 }
+.navbar_first_child{
+  flex-grow: 1;
+}
 .searchbar{
-    position: relative;
+  width: 343px;
+  border-radius: 0px 0px 0px 0px;
+  border: 1px solid #E0E0E0;
+  outline: #E0E0E0;  
+  background-color: #F5F5F5; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
  } 
 .search_bar{
-    width: 343px;
     height: 44px;
-    padding: 10px 16px 10px 16px;
-    border-radius: 4px 0px 0px 0px;
-    border: 1px solid #E0E0E0;
-    outline: #E0E0E0;  
+    width: 303px;
+    padding: 10px 16px 10px 0px;
     background-color: #F5F5F5; 
-    position:relative;
+    border: none;
+    outline: none;
 }
-
 .search_icon {
     font-size: 26px;
-    position:absolute;
-    right: 1vw; 
-    top: 0.5vw;
     border: none;
     outline: none;
     cursor: pointer;
   }
 
 .navbar_content{
-    position: absolute;
-    top:1%;
-    right:1%;
     width: max-content;
     display: flex;
     align-items: center;
@@ -100,51 +101,14 @@
   }
 }
 
-@media (max-width:590px){
-    .leave_nav_header,.addemp_nav_header{
+@media (max-width:684px){
+    .navbar_first_child{
       display: none;
-    }
-   
+    }  
 }
 @media (max-width:490px){
     .navbar_content{
-        right: -4%;
+        right: 1%;
     }
 }
 
-    /* @media only screen and (max-width:1204px){ 
-        .navbar {
-            width:100vw;
-            justify-content: space-between;
-        }
-        .navbar_content{
-            width: fit-content;
-          }
-         
-    }
-    @media  only screen and (max-width:800px){
-        .search_bar{
-            width: fit-content;
-          }
-          .navbar{
-            padding-left: 0%;
-          }
-    }
-   
-    @media screen and (max-width:436px) {
-        .search_bar{
-            display: none;
-        }
-        .navbar_content{
-            width: 80vw;
-            justify-content: space-around;
-        }
-    }
-   
-    @media only screen and (max-width:637px){
-       
-        .search_bar button{
-            display: none;
-        }
-
-    } */
