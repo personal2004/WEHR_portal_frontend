@@ -23,14 +23,17 @@
     line-height: 18px;
     text-align: left;
 }
+.empfootend{
+    padding: 12px 0px;
+}
 .empfootend button{
-    padding: 12px 27px;
+    padding: 8px 17px;
     border-radius: 10px;
     margin-right: 6px;
 }
 .empfootend button:nth-child(1){
     background-color: white;
-    margin-right: 100px;
+    margin-right: 60px;
 }
 .save_button{
     color: white;
@@ -44,7 +47,7 @@
 }
 @media(max-width:561px){
     .empfoot_card{
-       padding-left: 0%; 
+       padding-left: 25px; 
     }
 }
 @media (max-width:550px) {
