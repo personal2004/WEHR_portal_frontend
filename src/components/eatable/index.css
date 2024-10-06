@@ -161,6 +161,10 @@ option{
   right: 50px;
 }
 .leave_action h5{
+  display: flex;
+align-items: center;
+gap: 10px;
+/* justify-content: center; */
 color: black;
 font-family: 'Inter';
 font-size: 14px;

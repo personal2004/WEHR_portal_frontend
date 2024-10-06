@@ -83,10 +83,10 @@
 
 @media screen and (max-width:1010px) {
     .signInCard{
+        padding: 50px;
         width: 100vw;
         align-items: center;
         justify-content: center;
-        padding: 0%;
     }
     .signin_input button{
         font-size: 20px;
@@ -100,11 +100,16 @@
         height: 50px;
     }
     .signinform{
+        display:flex;
+        flex-direction: column;
         width: 60vw;
         height: 74vh;
     }
 }
 @media screen and (max-width:773px){
+    .signinform h1{
+        font-size: 50px;
+    }
     .signInCard{
         width:100vw ;
         flex-direction: column;
@@ -117,7 +122,7 @@
         height: 30px;
     }
     .signinform{
-        height: 64vh;
+        height: 74vh;
     }
    .signin_input button{
      font-size: larger;

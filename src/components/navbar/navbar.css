@@ -43,6 +43,7 @@
     outline: none;
 }
 .search_icon {
+    margin:0px 20px;
     font-size: 26px;
     border: none;
     outline: none;
@@ -63,7 +64,7 @@
 .profile_picture{
     border-radius: 100%;
     width: 35px;
-    height: 6vh;
+    height: 4vh;
 }
 .navbar_content h3{
     font-family: 'Poppins';

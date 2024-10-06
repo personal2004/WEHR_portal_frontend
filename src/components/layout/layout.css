@@ -35,6 +35,7 @@
         width: 94vw;
     }
     .layout_navbar {
+        height: 150px;
         width: 94vw;
         /* width: 97vw; */
     }
@@ -50,23 +51,29 @@
         display: none;
     }  
     .displayMenu_bar{
+        position:fixed;
         background-color:#FAFAFA;
         width: max-content;
         font-size: 40px;
         display: block;
         height: auto;
     }
+    .layout_content{
+        margin-left: 25px;
+
+    }
     .notdisplay{
         display: block;
+        position: fixed;
     }
 }
 @media only screen and (max-width:1104px){
     .layout_navbar{
-        height: max-content;
         width: 93vw;
+        height: 100px;
     }
     .navbar {
-        width: 93vw;
+        width: 98vw;
     }
 }
 @media only screen and (max-width:585px){
@@ -75,6 +82,6 @@
         width: 89vw;
     }
     .navbar {
-        width: 89vw;
+        width: 97vw;
     }
 }

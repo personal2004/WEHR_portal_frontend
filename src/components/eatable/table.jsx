@@ -64,9 +64,9 @@ const Eatable=({tablecon,tableclass='eatable_component'})=>{
                                         <td style={{position:'relative'}}>
                                             <div class='threedot'>{icons.threedot}</div>
                                             <div className={showoption?'leave_action':'leave_action_disapper'} onClick={(e)=>(setshowoption(!showoption))}>
-                                                <h5>{icons.correct} Approve Leave</h5> 
-                                                <h5>{icons.wrong} Reject Leave</h5>
-                                                <h5>{icons.eye} View Details</h5>
+                                                <h5><span>{icons.correct}</span> Approve Leave</h5> 
+                                                <h5><span>{icons.wrong}</span> Reject Leave</h5>
+                                                <h5><span>{icons.eye}</span>View Details</h5>
                                             </div>
                                         </td> 
                                     
